@@ -1,7 +1,7 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
-import Landing from './components/Landing/Landing';
+//import Landing from './components/Landing/Landing';
 import Navbar from './components/Navbar/Navbar';
 import './App.css';
 
@@ -11,7 +11,7 @@ function App() {
 
   const boolAddComponent =
     pathname === '/' ||
-    pathname === '/home';
+    pathname === '/inicio';
 
   return (
     <>
@@ -20,8 +20,8 @@ function App() {
         {boolAddComponent && <Navbar />}
 
         <Routes>
-          <Route path={'/'} element={<Landing />} />
-          <Route path={'/home'} element={<Home />} />
+          {/* <Route path={'/'} element={<Landing />} /> */}
+          <Route path={'/inicio'} element={<Home />} />
         </Routes>
 
         {boolAddComponent && <Footer />}
