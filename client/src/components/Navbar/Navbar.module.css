@@ -7,20 +7,22 @@
         top: 0;
         left:0;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: right;
+        align-items: end;
         /* align-content: flex-end; */
-        height: 15vh;
+        height: 10vh;
         width: 100vw;
         background-color: white;
+        /* opacity: 0.3;  */
         border-bottom: solid 0.5px #a4a4a4;
     }
 
     .pNavbarDiv {
         height: 43.33px;
+        padding-right: 1.5rem;
         color: #000;
         /* font-family: 'Open Sans'; */
-        font-size: 70px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
