@@ -10,7 +10,7 @@ const Navbar = () => {
                     <Link to='/'>MUJERES DE CONFORT</Link>
                 </p>
                 <p className={style.pNavbarDiv}>
-                    <Link to='/'>VERDAD YJUSTICIA</Link>
+                    <Link to='/'>VERDAD Y JUSTICIA</Link>
                 </p>
                 <p className={style.pNavbarDiv}>
                     <Link to='/'>DIFUSIÓN</Link>
