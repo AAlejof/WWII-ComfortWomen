@@ -10,19 +10,20 @@
         justify-content: right;
         align-items: end;
         /* align-content: flex-end; */
-        height: 10vh;
+        /* height: 10vh; */
         width: 100vw;
-        background-color: white;
+        background-color: #FFE14F;
         /* opacity: 0.3;  */
         border-bottom: solid 0.5px #a4a4a4;
     }
 
     .pNavbarDiv {
-        height: 43.33px;
+        height: 60px;
+        margin-right: 2%;
         padding-right: 1.5rem;
-        color: #000;
-        /* font-family: 'Open Sans'; */
-        font-size: 20px;
+        color: #4D4D4D;
+        font-family: 'Merriweather Sans';
+        font-size: 15px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
