@@ -7,7 +7,19 @@ const Navbar = () => {
         <>
             <div className={style.navbarDiv}>
                 <p className={style.pNavbarDiv}>
-                    <Link to='/'>Mujeres de Confort</Link>
+                    <Link to='/'>MUJERES DE CONFORT</Link>
+                </p>
+                <p className={style.pNavbarDiv}>
+                    <Link to='/'>VERDAD YJUSTICIA</Link>
+                </p>
+                <p className={style.pNavbarDiv}>
+                    <Link to='/'>DIFUSIÓN</Link>
+                </p>
+                <p className={style.pNavbarDiv}>
+                    <Link to='/'>NOTICIAS</Link>
+                </p>
+                <p className={style.pNavbarDiv}>
+                    <Link to='/'>CONTACTO</Link>
                 </p>
             </div>
         </>
