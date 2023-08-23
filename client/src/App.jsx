@@ -1,7 +1,7 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
-//import Landing from './components/Landing/Landing';
+import Dashboard from './components/Dashboard/Dashboard';
 import Navbar from './components/Navbar/Navbar';
 import './App.css';
 
@@ -20,8 +20,8 @@ function App() {
         {boolAddComponent && <Navbar />}
 
         <Routes>
-          {/* <Route path={'/'} element={<Landing />} /> */}
-          <Route path={'/inicio'} element={<Home />} />
+          <Route path={'/'} element={<Home />}/>
+          <Route path={'/admin'} element={<Dashboard />}/>
         </Routes>
 
         {boolAddComponent && <Footer />}
