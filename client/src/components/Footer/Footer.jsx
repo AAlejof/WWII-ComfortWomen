@@ -5,6 +5,9 @@ import React from 'react';
 const Footer = () => {
     return (
         <>
+            <div className={style.footerDiv}>
+                <p className={style.pFooterDiv}>FUNDACIÓN MANYOUNG · 2023</p>
+            </div>
         </>
     )
 }

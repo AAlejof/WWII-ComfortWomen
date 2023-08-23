@@ -11,17 +11,17 @@
         margin-bottom: 5vh;
     }
 
-    h2 {
+    /* h2 {
         font-family: 'Open Sans';
         font-size: 25px;
         text-align: left;
         color: #000000;
-        font-weight: 800;
+        font-weight: 900;
         width: 85vw;
-    }
+    } */
 
     .mainP {
-        font-family: 'Merryweather';
+        font-family: 'Merriweather';
         font-size: 18px;
         text-align: left;
         color: #666666;
@@ -33,33 +33,45 @@
 
 /* ---------DESKTOP & TABLET--------- */
 @media (min-width: 451px) {
-    .mainDiv {
+
+    .descImgDiv {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         width: 100vw;
-        margin-top: 20vh;
+        height: 575px;
+        margin-top: 60px;
+        background-color: #FFF;
+        padding-bottom: 50px #4D4D4D;
     }
-
-    h2 {
-        font-family: 'Open Sans';
+    
+    .descDiv {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .descH2 {
+        font-family: 'Merriweather';
         font-size: 45px;
         text-align: left;
-        color: #000000;
-        font-weight: 800;
-        width: 60vw;
+        color: #1E1E1E;
+        font-weight: 900;
+        padding-top: 5vw;
+        padding-left: 5vw;
+        width: 355px;
     }
 
-    .mainP {
-        font-family: 'Merryweather';
-        font-size: 22px;
+    .descP {
+        font-family: 'Merriweather';
+        font-size: 14px;
         text-align: left;
         color: #666666;
         font-weight: 400;
-        width: 60vw;
-        margin-bottom: 10vh; 
-        
+        padding-left: 5vw;
+        margin-bottom: 10vh;
+        width: 355px;
+        line-height: 175%;
     }
+
 }
