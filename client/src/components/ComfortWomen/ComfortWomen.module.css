@@ -81,6 +81,7 @@
     .infoDiv {
         background-color: #4D4D4D;
         width: 100vw;
+        height: 60vh;
     }
 
     .contentDiv {
@@ -109,6 +110,14 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
+        line-height: 175%;
+    }
+    
+    .koreanText {
+        font-family: 'Noto sans korean';
+        /* font-size: 18px; */
+        font-style: normal;
+        font-weight: 900;
         line-height: 175%;
     }
 
