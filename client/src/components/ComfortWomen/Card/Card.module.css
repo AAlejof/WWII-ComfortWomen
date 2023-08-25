@@ -5,16 +5,18 @@
     margin: 1%;
     width: 440px;
     height: 550px;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .cardContainer:hover {
     opacity: 1;
+    background-color: #5a5a5a;
 }
 
 .cardImg {
     width: 440px;
-    height: auto;
+    height: 370px;
+    object-fit: cover;
 }
 
 h3 {
