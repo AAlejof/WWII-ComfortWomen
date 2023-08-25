@@ -2,7 +2,6 @@ import style from './ComfortWomen.module.css';
 import React, { useState } from 'react';
 import image from '../../assets/img/homeImg.png';
 import Card from './Card/Card';
-//import textData from './TextData.jsx'
 
 const ComfortWomen = () => {
     const [selectedTitle, setSelectedTitle] = useState("¿Quiénes son?");
