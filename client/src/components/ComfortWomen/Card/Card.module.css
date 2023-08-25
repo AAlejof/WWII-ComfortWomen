@@ -1,0 +1,48 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 1%;
+    width: 440px;
+    height: 550px;
+    opacity: 0.8;
+}
+
+.cardContainer:hover {
+    opacity: 1;
+}
+
+.cardImg {
+    width: 440px;
+    height: auto;
+}
+
+h3 {
+    margin: 0;
+    color: #FFF;
+    font-family: Merriweather Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h4 {
+    margin: 0;
+    color: #FFF;
+    font-family: Merriweather Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+}
+
+.cardP {
+    color: #FFF;
+    font-family: Merriweather;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 175%;
+    /* 31.5px */
+}
