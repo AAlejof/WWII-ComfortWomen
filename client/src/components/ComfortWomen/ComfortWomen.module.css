@@ -81,12 +81,20 @@
     .infoDiv {
         background-color: #4D4D4D;
         width: 100vw;
-        height: 60vh;
+        height: max-content;
+        min-height: 70vh;
+    }
+
+    .titleDiv {
+        display: flex;
+        justify-content: space-between;
+        padding: 5%;
     }
 
     .contentDiv {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         padding: 5%;
         text-align: left;
     }
