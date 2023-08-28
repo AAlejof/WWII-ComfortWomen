@@ -11,10 +11,12 @@ const ComfortWomen = () => {
             title: "¿Quiénes son?",
             summary: (
                 <>
-                    "Mujeres de confort" es la traducción literal del término
-                    <span className={style.koreanText}> 慰安婦 </span>
-                    utilizado por el ejército japonés para encubrir a las mujeres esclavizadas sexualmente por la Armada Imperial durante la guerra de avance de Japón en Asia (1932-1945).
-                    En español, se las denomina también “mujeres de consuelo” o “mujeres de solaz”.
+                    <p>
+                        "Mujeres de confort" es la traducción literal del término
+                        <span className={style.koreanText}> 慰安婦 </span>
+                        utilizado por el ejército japonés para encubrir a las mujeres esclavizadas sexualmente por la Armada Imperial durante la guerra de avance de Japón en Asia (1932-1945).
+                        En español, se las denomina también “mujeres de consuelo” o “mujeres de solaz”.
+                    </p>
                 </>
             ),
             text: (
