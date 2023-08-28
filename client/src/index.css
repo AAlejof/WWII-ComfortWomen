@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Noto+Sans+KR:wght@400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans');
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif, Merriweather, Merriweather Sans;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif, Merriweather, Merriweather Sans, Noto sans korean;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
