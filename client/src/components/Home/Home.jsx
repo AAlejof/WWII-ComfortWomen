@@ -4,6 +4,7 @@ import React from 'react';
 import ComfortWomen from '../ComfortWomen/ComfortWomen'
 import TruthJustice from '../Truth&Justice/Truth&Justice';
 import Difussion from '../Difussion/Difussion';
+import News from '../News/News';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
                 <ComfortWomen/>
                 <TruthJustice/>
                 <Difussion/>
+                <News/>
             </div>
         </>
     )
