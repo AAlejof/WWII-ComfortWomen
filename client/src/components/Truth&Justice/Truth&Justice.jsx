@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 
 const TruthJustice = () => {
-    const [selectedTitle, setSelectedTitle] = useState("¿Quiénes son?");
+    const [selectedTitle, setSelectedTitle] = useState("Demandas");
 
     const textData = [
         {
@@ -80,9 +80,61 @@ const TruthJustice = () => {
             ),
             text: (
                 <>
-                    <p>El primer museo dedicado a las víctimas de la esclavitud sexual de la Armada Imperial de Japón lo inauguró House of Sharing en Corea del Sur el 14 de agosto de 1998. El Museum of Japanese Military Sexual Slavery que funciona actualmente en Gyeonggi-do. El 5 de mayo de 2012, el Korean Council abrió el War and Women´s Human Rights Museum en Seúl. El 5 de diciembre en la ciudad de Daegu inaguraron el Museum of Military Sexual Slavry by Japan. En Corea del Sur, además de los museos, suele haber exhibiciones temporarias y permanentes en distintos museos nacionales y provinciales. La musealización de este pasado traumático se expandió a otros países de la región. En China continental se encuentra el único museo que funciona en una ex estación de confort, el Museum of Dongjiagou Japanese Military Confort Station in Longling. Además, hay una exhibición permanente en el Nanjing Massacre Memorial Hall y, en 2016, abrió el Chinese “Comfort Women” History Museum en la Shanghai Normal University. En Taipei está el Ama Museum y, en Tokio, el Japanese Women´s Active Museum on War and Peace. En Berlin, también hay un museo dedicado a las “mujeres de confort” llamado Museum der Trostfrauen.</p>
-                    <p>Una de las obras conmemorativas más famosas es la estatua de la paz (평화의 소녀상). La estatua fue creada por los artistas coreanos Kim Seo-Kyung y Kim Eun-Sung. El 11 de diciembre de 2011, fue colocada frente a la Embajada de Japón en Seúl en conmemoración a la protesta de los miércoles número mil. Esta estatua se convirtió en un símbolo global de la lucha por verdad y justicia. En la actualidad, hay cientos de estatuas colocadas en Corea del Sur, de Paju en las cercanías al paralelo 38, a la isla de Jeju, diversas versiones de la estatua de la paz conmemoran a las “mujeres de confort” en espacios públicos. Además, el Korean Council organizó la colocación de estatuas en escuelas secundarias de Corea logrando colocar 239 estatuas de la paz.</p>
-                    <p>La obra artista de los Kim se convirtió en un símbolo de memoria y justicia en otros países. Hay réplicas de la estatua de la paz en Shanghái, Hong, Kong, Sídney, Melbourne, Ratisbona, Frankfurt, Berlín, Dresde, Toronto, Nueva York, Michigan, Washington, Georgia, California y Connecticut. También hay memoriales de las “mujeres de confort” en Tainan, Manila, Borácay y diez en distintos espacios públicos de California, New Jersey y Virginia en los Estados Unidos.</p>
+                    <div className={style.socActDiv}>
+                        <p className={style.socActTitle}>Corea del Sur</p>
+                        <div className={style.socActDesc}>
+                            <p><a className={style.anchorTJ} href="http://www.nanum.org/eng/main/index.php" target="_blank">House of Sharing</a></p>
+                            <p><a className={style.anchorTJ} href="https://womenandwar.net/kr/about-us/?ckattempt=1" target="_blank">Korean Council for Justice and Remembrance for the Issues of Military Sexual Slavery by Japan</a></p>
+                        </div>
+                    </div>
+                    <div className={style.socActDiv}>
+                        <p className={style.socActTitle}>China continental</p>
+                        <div className={style.socActDesc}>
+                            <p>Research Center for Chinese Comfort Women (RCCW) – Normal Shanghai University</p>
+                        </div>
+                    </div>
+                    <div className={style.socActDiv}>
+                        <p className={style.socActTitle}>Taipéi</p>
+                        <div className={style.socActDesc}>
+                            <p>Taipei Women's Rescue Foundation– Comfort Women</p>
+                        </div>
+                    </div>
+                    <div className={style.socActDiv}>
+                        <p className={style.socActTitle}>Japón</p>
+                        <div className={style.socActDesc}>
+                            <p>Violence Against Women in War Network (VAWW-NET Japan) – Comfort Women</p>
+                        </div>
+                    </div>
+                    <div className={style.socActDiv}>
+                        <p className={style.socActTitle}>Filipinas</p>
+                        <div className={style.socActDesc}>
+                            <p>LILA-Pilipina</p>
+                        </div>
+                    </div>
+                    <div className={style.socActDiv}>
+                        <p className={style.socActTitle}>Estados Unidos</p>
+                        <div className={style.socActDesc}>
+                            <p><a className={style.anchorTJ} href="https://remembercomfortwomen.org/" target="_blank">Comfort Women Justice Coalition (CWJC)</a></p>
+                            <p><a className={style.anchorTJ} href="https://comfort-women.org/?page_id=10763" target="_blank">Washington Coalition for Comfort Women Issues, Inc. (WCCW)</a></p>
+                        </div>
+                    </div>
+                    <div className={style.socActDiv}>
+                        <p className={style.socActTitle}>Alemania</p>
+                        <div className={style.socActDesc}>
+                            <p><a className={style.anchorTJ} href="https://trostfrauen.de/#:~:text=Die%20AG%20%E2%80%9ETrostfrauen%E2%80%9C%20im%20Korea,den%20Philippinen%20und%20anderen%20L%C3%A4ndern." target="_blank">AG "Trostfrauen" - Solidarity with "Comfort Women"</a></p>                      </div>
+                    </div>
+                    <div className={style.socActDiv}>
+                        <p className={style.socActTitle}>Gran Bretaña</p>
+                        <div className={style.socActDesc}>
+                            <p><a className={style.anchorTJ} href="https://justiceforcomfortwomen.org/" target="_blank">Justice for Comfort Women (JCW)</a></p>
+                        </div>
+                    </div>
+                    <div className={style.socActDiv}>
+                        <p className={style.socActTitle}>Canadá</p>
+                        <div className={style.socActDesc}>
+                            <p><a className={style.anchorTJ} href="https://www.alpha-canada.org/" target="_blank">Canada ALPHA- Comfort Women</a></p>
+                        </div>
+                    </div>
                 </>)
 
         }
