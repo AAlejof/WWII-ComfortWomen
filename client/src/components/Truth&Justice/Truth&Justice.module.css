@@ -36,6 +36,9 @@
         /* margin-top: 60px; */
         background-color: #000;
         padding-bottom: 50px #4D4D4D;
+        border-top: 2rem solid;
+        border-image: linear-gradient(to right, #4D4D4D 37%, #000 37%) 1;
+        
     }
 
     .descDiv {
@@ -75,6 +78,8 @@
         width: 100vw;
         height: max-content;
         min-height: 85vh;
+        border-bottom: 2rem solid;
+        border-image: linear-gradient(to right, #FFF 37%, #000 37%) 1;
     }
 
     .titleDiv {
@@ -112,13 +117,37 @@
         font-weight: 400;
         line-height: 175%;
     }
-    
+
     .koreanText {
         font-family: 'Noto sans korean';
         /* font-size: 18px; */
         font-style: normal;
         font-weight: 900;
         line-height: 175%;
+    }
+
+    .socActDiv {
+        display: flex;
+    }
+
+    .socActTitle {
+        font-weight: 900;
+        width: 20%;
+    }
+
+    .socActDesc {
+        width: 80%;
+    }
+
+    .anchorTJ {
+        text-decoration: none;
+        color: #FFF;
+    }
+
+    .anchorTJ:hover {
+        text-decoration: none;
+        color: #FFF;
+        font-weight: 900;
     }
 
 }
