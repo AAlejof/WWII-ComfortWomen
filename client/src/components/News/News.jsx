@@ -1,7 +1,6 @@
 import style from './News.module.css';
 import React, { useState } from 'react';
 import NewsCard from './NewsCard/NewsCard';
-import image from '../../assets/img/gilWon-okImg.jpeg';
 
 const News = () => {
     return (
@@ -14,8 +13,11 @@ const News = () => {
                 </div>
                 <div className={style.infoDiv}>
                     <div className={style.contentDiv}>
-                        <NewsCard/><NewsCard/><NewsCard/>
+                        <NewsCard /><NewsCard /><NewsCard />
                     </div>
+                <button className={style.btnDiv}>
+                    VER MÁS
+                </button>
                 </div>
             </div>
         </>
