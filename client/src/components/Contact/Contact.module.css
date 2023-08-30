@@ -1,0 +1,83 @@
+/* ---------DESKTOP & TABLET--------- */
+@media (min-width: 451px) {
+
+    .contactDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        background-color: #4D4D4D;
+        padding-bottom: 50px #4D4D4D;
+    }
+
+    .descDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .descH2 {
+        font-family: 'Merriweather';
+        font-size: 45px;
+        text-align: left;
+        color: #FFF;
+        font-weight: 900;
+        padding-top: 5vw;
+        padding-left: 5vw;
+        width: 355px;
+    }
+
+
+    .infoDiv {
+        background-color: #4D4D4D;
+        width: 100vw;
+        height: max-content;
+        min-height: 50vh;
+    }
+
+    .contentDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 5%;
+        text-align: left;
+    }
+
+    .contactMeansDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactP {
+        font-family: 'Merriweather Sans';
+        font-size: 14px;
+        text-align: left;
+        color: #FFF;
+        font-weight: 300;
+        padding-left: 5vw;
+        margin-bottom: 5vh;
+        width: 355px;
+        line-height: 175%;
+    }
+
+    .contactA {
+        text-decoration: none;
+        color: #FFF;
+        font-family: Merriweather Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 175%;
+        text-decoration-line: underline;
+    }
+
+    .contactA:hover {
+        color: #FFF;
+    }
+
+    .contactIcons {
+        display: flex;
+        padding-left: 5vw;
+    }
+
+}

@@ -9,11 +9,9 @@
         display: flex;
         justify-content: right;
         align-items: end;
-        /* align-content: flex-end; */
-        /* height: 10vh; */
         width: 100vw;
         background-color: #FFE14F;
-        /* opacity: 0.3;  */
+        z-index: 5;
     }
 
     .pNavbarDiv {
