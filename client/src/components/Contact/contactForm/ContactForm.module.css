@@ -4,6 +4,7 @@
     .formContainer {
         display: flex;
         flex-direction: column;
+        margin-top: 0;
     }
 
     .formP {
@@ -15,4 +16,72 @@
         line-height: 175%;
     }
 
+    .formDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 470px;
+        height: 500px;
+        margin-bottom: 40px;
+    }
+
+    .formInput {
+        display: flex;
+        width: 470px;
+        padding: 8px 0px;
+        align-items: flex-start;
+        gap: 10px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #6D6D6D;
+        background-color: #4D4D4D;
+        color: #A1A1A1;
+        font-family: Merriweather Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 175%;
+    }
+
+    .bigBoxInput {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        width: 470px;
+        height: 200px;
+        padding: 8px 0px;
+        gap: 10px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #6D6D6D;
+        background-color: #4D4D4D;
+        color: #A1A1A1;
+        font-family: Merriweather Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 175%;
+    }
+
+    .btnDiv {
+        display: inline-flex;
+        width: 158px;
+        height: 59px;
+        padding: 20px 25px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: #4D4D4D;
+        border: 1px solid #FFF;
+        color: #FFF;
+        text-align: center;
+        font-family: Merriweather Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 3.75px;
+        margin-bottom: 3%;
+    }
 }

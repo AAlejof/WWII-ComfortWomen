@@ -7,11 +7,16 @@ const ContactForm = () => {
             <div className={style.formContainer}>
                 <p className={style.formP}>Puede utilizar el siguiente formulario para contactarnos.</p>
                 <form action="">
-                    <input type="text" placeholder="Nombre/s" />
-                    <input type="text" placeholder="E-Mail" />
-                    <input type="text" placeholder="Asunto" />
-                    <input type="text" placeholder="Mensaje" />
+                    <div className={style.formDiv}>
+                        <input className={style.formInput} type="text" id='name' placeholder="Nombre/s" autoComplete='on' />
+                        <input className={style.formInput} type="text" id='mail' placeholder="E-Mail" />
+                        <input className={style.formInput} type="text" id='about' placeholder="Asunto" />
+                        <textarea className={style.bigBoxInput} type="text" id='message' placeholder="Mensaje" />
+                    </div>
                 </form>
+                <button className={style.btnDiv}>
+                    ENVIAR
+                </button>
             </div>
         </>
     )

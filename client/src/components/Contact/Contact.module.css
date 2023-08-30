@@ -8,7 +8,7 @@
         align-items: center;
         width: 100vw;
         background-color: #4D4D4D;
-        padding-bottom: 50px #4D4D4D;
+        padding-bottom: 40px #4D4D4D;
     }
 
     .descDiv {
@@ -32,7 +32,6 @@
         background-color: #4D4D4D;
         width: 100vw;
         height: max-content;
-        min-height: 50vh;
     }
 
     .contentDiv {
@@ -43,9 +42,15 @@
         text-align: left;
     }
 
+    .formDiv {
+        width: 33%;
+    }
+
     .contactMeansDiv {
         display: flex;
         flex-direction: column;
+        width: 66%;
+        padding-left: 15vw;
     }
 
     .contactP {
