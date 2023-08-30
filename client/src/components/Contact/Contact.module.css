@@ -1,7 +1,7 @@
 /* ---------DESKTOP & TABLET--------- */
 @media (min-width: 451px) {
 
-    .descImgDiv {
+    .contactDiv {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -27,63 +27,57 @@
         width: 355px;
     }
 
-    .descP {
-        font-family: 'Merriweather';
-        font-size: 14px;
-        text-align: left;
-        color: #666666;
-        font-weight: 400;
-        padding-left: 5vw;
-        margin-bottom: 10vh;
-        width: 355px;
-        line-height: 175%;
-    }
-
-    .descImg {
-        z-index: 1;
-    }
 
     .infoDiv {
         background-color: #4D4D4D;
         width: 100vw;
         height: max-content;
-        min-height: 70vh;
-    }
-
-    .titleDiv {
-        display: flex;
-        justify-content: space-between;
-        padding: 5%;
+        min-height: 50vh;
     }
 
     .contentDiv {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 5%;
         text-align: left;
     }
 
-    .summaryDiv {
-        width: 33.33%;
-        padding-right: 5vw;
+    .contactMeansDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactP {
+        font-family: 'Merriweather Sans';
+        font-size: 14px;
+        text-align: left;
         color: #FFF;
-        font-family: Merriweather;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 900;
+        font-weight: 300;
+        padding-left: 5vw;
+        margin-bottom: 5vh;
+        width: 355px;
         line-height: 175%;
     }
 
-    .textDiv {
-        width: 66.66%;
-        padding-right: 3vw;
-        font-family: 'Merriweather';
+    .contactA {
+        text-decoration: none;
         color: #FFF;
+        font-family: Merriweather Sans;
         font-size: 14px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 175%;
+        text-decoration-line: underline;
+    }
+
+    .contactA:hover {
+        color: #FFF;
+    }
+
+    .contactIcons {
+        display: flex;
+        padding-left: 5vw;
     }
 
 }

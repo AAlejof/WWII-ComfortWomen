@@ -1,0 +1,18 @@
+/* ---------DESKTOP & TABLET--------- */
+@media (min-width: 451px) {
+
+    .formContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formP {
+        color: #FFF;
+        font-family: Merriweather;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 175%;
+    }
+
+}
