@@ -28,10 +28,10 @@ const Contact = () => {
                                 <a className={style.contactA} href="" >Fundación Manyoung</a>
                             </p>
                             <div className={style.contactIcons}>
-                                <img src={instagram} alt="instagram" />
-                                <img src={youtube} alt="youtube" />
-                                <img src={linkedin} alt="linkedin" />
-                                <img src={facebook} alt="facebook" />
+                                <a href="https://www.instagram.com/fundacionmy/" target="_blank"><img src={instagram} alt="instagram" /> </a>
+                                <a href="https://www.youtube.com/@FundacionManyoung" target="_blank"><img src={youtube} alt="youtube" /></a>
+                                <a href="" target="_blank"><img src={linkedin} alt="linkedin" /></a>
+                                <a href="" target="_blank"><img src={facebook} alt="facebook" /></a>
                             </div>
                         </div>
                     </div>
