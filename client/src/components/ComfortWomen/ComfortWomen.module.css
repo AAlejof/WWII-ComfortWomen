@@ -87,8 +87,22 @@
 
     .titleDiv {
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         padding: 5%;
+    }
+
+    .selectedTitle {
+        margin: 0;
+        width: 20vw;
+        height: 115px;
+        background-color: #4D4D4D;
+    }
+
+    .titleButton {
+        margin: 0;
+        width: 20vw;
+        height: 115px;
+        background-color: #4D4D4D;
     }
 
     .contentDiv {

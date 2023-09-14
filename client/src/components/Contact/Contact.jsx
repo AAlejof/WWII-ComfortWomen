@@ -22,16 +22,19 @@ const Contact = () => {
                         </div>
                         <div className={style.contactMeansDiv}>
                             <p className={style.contactP}>
-                                Mail: <br /> 
-                                contacto@fundacionmanyoung.org <br /> 
+                                El Salvador 3763,<br />
+                                CABA, Argentina. <br />
+                                - <br />
+                                MAIL: <br /> 
+                                <a className={style.contactA} href="mailto:cultura@fundacionmanyoung.org">cultura@fundacionmanyoung.org</a><br /> 
+                                <a className={style.contactA} href="mailto:fundacionmanyoung@gmail.com">fundacionmanyoung@gmail.com</a> <br />
                                 - <br /> 
+                                WEB: <br />
                                 <a className={style.contactA} href="" >Fundación Manyoung</a>
                             </p>
                             <div className={style.contactIcons}>
                                 <a href="https://www.instagram.com/fundacionmy/" target="_blank"><img src={instagram} alt="instagram" /> </a>
                                 <a href="https://www.youtube.com/@FundacionManyoung" target="_blank"><img src={youtube} alt="youtube" /></a>
-                                <a href="" target="_blank"><img src={linkedin} alt="linkedin" /></a>
-                                <a href="" target="_blank"><img src={facebook} alt="facebook" /></a>
                             </div>
                         </div>
                     </div>
