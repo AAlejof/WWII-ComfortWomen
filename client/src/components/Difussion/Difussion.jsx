@@ -42,21 +42,27 @@ const Difussion = () => {
                 <div className={style.infoDiv}>
                     <div className={style.titleDiv}>
                         {textData.map(item => (
-                            <button
-                                key={item.title}
-                                className={selectedTitle === item.title ? style.selectedTitle : style.titleButton}
-                                onClick={() => setSelectedTitle(item.title)}
-                            >
-                                {item.title}
-                            </button>
+                            <div className={style.buttonsDiv}>
+                                <button
+                                    key={item.title}
+                                    className={selectedTitle === item.title ? style.selectedTitle : style.titleButton}
+                                    onClick={() => setSelectedTitle(item.title)}
+                                >
+                                    <div className={style.titleText}>{item.title}</div>
+
+                                </button>
+                                <div className={style.selectorDiv}>
+                                    <div className={selectedTitle === item.title ? style.selectorOn : style.selectorOff}></div>
+                                </div>
+                            </div>
                         ))}
                     </div>
                     {
-                             <div className={style.contentDiv}>
-                                <div className={style.textDiv}>
-                                    {textData.find(item => item.title === selectedTitle)?.text}
-                                </div>
+                        <div className={style.contentDiv}>
+                            <div className={style.textDiv}>
+                                {textData.find(item => item.title === selectedTitle)?.text}
                             </div>
+                        </div>
                     }
                 </div>
             </div>

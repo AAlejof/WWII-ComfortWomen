@@ -74,11 +74,14 @@
         line-height: 175%;
     }
 
+    /* ---------CARROUSEL-------- */
+
     .descImg {
         z-index: 1;
         width: 100%;
         max-width: 890px;
     }
+
 
     .carouselContainer {
         position: relative;
@@ -112,31 +115,96 @@
     }
 
 
+    /* ---------------InfoDiv-------------- */
+
     .infoDiv {
         background-color: #4D4D4D;
         width: 100vw;
         height: max-content;
-        min-height: 70vh;
+        min-height: 90vh;
     }
 
     .titleDiv {
         display: flex;
-        /* justify-content: space-between; */
+        text-align: left;
         padding: 5%;
+        padding-top: 10%;
+
     }
 
     .selectedTitle {
+        display: flex;
         margin: 0;
+        background-color: transparent;
+        border: none;
         width: 20vw;
         height: 115px;
-        background-color: #4D4D4D;
+        border-bottom: 2px solid #FFF;
+        color: #FFF;
+        font-family: Merriweather;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 150%;
+        letter-spacing: 3.5px;
+        text-transform: uppercase;
+        text-align: left;
     }
 
     .titleButton {
+        display: flex;
         margin: 0;
+        background-color: transparent;
+        border: none;
         width: 20vw;
         height: 115px;
-        background-color: #4D4D4D;
+        border-bottom: 1px solid #6D6D6D;
+        color: #A1A1A1;
+        font-family: Merriweather;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 150%;
+        letter-spacing: 3.5px;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+    .selectorDiv {
+        margin: 0;
+        border-bottom: 1px solid #6D6D6D;
+    }
+
+    .selectorOff {
+        width: 10px;
+        height: 10px;
+        background: #6D6D6D;
+    }
+
+    .selectorOn {
+        width: 10px;
+        height: 36px;
+        background: #FFE14F;
+    }
+
+    .selectorOff,
+    .selectorOn {
+        width: 10px;
+        background: #6D6D6D;
+        transition: height 0.3s ease;
+    }
+
+    .selectorOn {
+        height: 36px;
+        background: #FFE14F;
+    }
+
+
+    .titleText {
+        width: 185px;
+        height: 36px;
+        padding-left: 20px;
+        border-left: 1px solid #A1A1A1;
     }
 
     .contentDiv {
@@ -144,6 +212,7 @@
         flex-direction: row;
         justify-content: space-between;
         padding: 5%;
+        padding-top: 0;
         text-align: left;
     }
 
