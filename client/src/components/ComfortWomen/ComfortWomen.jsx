@@ -1,10 +1,16 @@
 import style from './ComfortWomen.module.css';
-import React, { useState } from 'react';
-import image from '../../assets/img/homeImg.png';
+import React, { useState, useEffect } from 'react';
+import image1 from '../../assets/img/home/homeImg.png';
+import image2 from '../../assets/img/home/homeImg2.png';
+import image3 from '../../assets/img/home/homeImg3.png';
 import Card from './Card/Card';
 
 const ComfortWomen = () => {
     const [selectedTitle, setSelectedTitle] = useState("¿Quiénes son?");
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [isCarouselRunning, setIsCarouselRunning] = useState(true);
+
+    const images = [image1, image2, image3];
 
     const textData = [
         {
@@ -74,6 +80,59 @@ const ComfortWomen = () => {
         }
     ];
 
+    const nextImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    };
+
+
+    useEffect(() => {
+        let interval;
+
+        if (isCarouselRunning) {
+            // Automatically advance the carousel every 3 seconds
+            interval = setInterval(nextImage, 5000);
+        }
+
+        // Clean up the interval on component unmount
+        return () => clearInterval(interval);
+    }, [isCarouselRunning]);
+
+    const stopCarousel = () => {
+        setIsCarouselRunning(false);
+    };
+
+    const startCarousel = () => {
+        setIsCarouselRunning(true);
+    };
+
+    const prevImage = () => {
+        setCurrentImageIndex((prevIndex) =>
+            prevIndex === 0 ? images.length - 1 : prevIndex - 1
+        );
+    };
+
+    const nextManualImage = () => {
+        if (isCarouselRunning) {
+            // If the carousel is running, stop it and manually advance
+            stopCarousel();
+            nextImage();
+        } else {
+            // If the carousel is stopped, manually advance
+            nextImage();
+        }
+    };
+
+    const prevManualImage = () => {
+        if (isCarouselRunning) {
+            // If the carousel is running, stop it and manually go back
+            stopCarousel();
+            prevImage();
+        } else {
+            // If the carousel is stopped, manually go back
+            prevImage();
+        }
+    };
+
     return (
         <>
             <div>
@@ -82,9 +141,14 @@ const ComfortWomen = () => {
                         <h2 className={style.descH2}>Mujeres de <br />Confort</h2>
                         <p className={style.descP}>Durante la Segunda Guerra Mundial, el término "Mujeres de Confort" se utilizó para encubrir a las mujeres esclavizadas sexualmente por el ejército japonés en Asia (1932-1945).</p>
                     </div>
-                    <div>
-                        <img className={style.descImg} src={image} alt="Mujeres de confort" />
+                    <div className={style.carouselButtons}>
+                        <button onClick={prevManualImage} className={style.chevron}>&#8249;</button>
+                        <button onClick={isCarouselRunning ? stopCarousel : startCarousel} className={style.start - stop}>
+                            {isCarouselRunning ? '■' : '▶'}
+                        </button>
+                        <button onClick={nextManualImage} className={style.chevron}>&#8250;</button>
                     </div>
+                    <img className={style.descImg} src={images[currentImageIndex]} alt="Mujeres de confort" />
                 </div>
                 <div className={style.infoDiv}>
                     <div className={style.titleDiv}>

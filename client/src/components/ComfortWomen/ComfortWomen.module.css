@@ -78,6 +78,37 @@
         z-index: 1;
     }
 
+    .carouselButtons {
+        display: none;
+        /* position: absolute; */
+        bottom: 5%;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .descImgDiv:hover .carouselButtons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .carouselButtons button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        color: #1E1E1E;
+    }
+
+    .carouselButtons .start-stop {
+        font-size: 36px;
+    }
+
+    .carouselButtons .chevron {
+        font-size: 48px;
+    }
+
     .infoDiv {
         background-color: #4D4D4D;
         width: 100vw;
