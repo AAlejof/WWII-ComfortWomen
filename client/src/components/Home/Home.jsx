@@ -1,5 +1,4 @@
 import style from './Home.module.css';
-import { Link } from 'react-router-dom';
 import React from 'react';
 import ComfortWomen from '../ComfortWomen/ComfortWomen'
 import TruthJustice from '../Truth&Justice/Truth&Justice';
@@ -11,11 +10,21 @@ const Home = () => {
     return (
         <>
             <div>
-                <ComfortWomen/>
-                <TruthJustice/>
-                <Difussion/>
-                <News/>
-                <Contact/>
+                <div id="comfortWomen">
+                    <ComfortWomen id="comfortWomen"/>
+                </div>
+                <div id="truthJustice">
+                    <TruthJustice/>
+                </div>
+                <div id="difussion">
+                    <Difussion/>
+                </div>
+                <div id="news">
+                    <News/>
+                </div>
+                <div id="contact">
+                    <Contact/>
+                </div>
             </div>
         </>
     )

@@ -8,7 +8,6 @@ import Card from './Card/Card';
 const ComfortWomen = () => {
     const [selectedTitle, setSelectedTitle] = useState("¿Quiénes son?");
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    const [isCarouselRunning, setIsCarouselRunning] = useState(true);
 
     const images = [image1, image2, image3];
 
@@ -84,26 +83,11 @@ const ComfortWomen = () => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     };
 
-
     useEffect(() => {
-        let interval;
+        const interval = setInterval(nextImage, 5000);
 
-        if (isCarouselRunning) {
-            // Automatically advance the carousel every 3 seconds
-            interval = setInterval(nextImage, 5000);
-        }
-
-        // Clean up the interval on component unmount
         return () => clearInterval(interval);
-    }, [isCarouselRunning]);
-
-    const stopCarousel = () => {
-        setIsCarouselRunning(false);
-    };
-
-    const startCarousel = () => {
-        setIsCarouselRunning(true);
-    };
+    }, []);
 
     const prevImage = () => {
         setCurrentImageIndex((prevIndex) =>
@@ -112,25 +96,11 @@ const ComfortWomen = () => {
     };
 
     const nextManualImage = () => {
-        if (isCarouselRunning) {
-            // If the carousel is running, stop it and manually advance
-            stopCarousel();
-            nextImage();
-        } else {
-            // If the carousel is stopped, manually advance
-            nextImage();
-        }
+        nextImage();
     };
 
     const prevManualImage = () => {
-        if (isCarouselRunning) {
-            // If the carousel is running, stop it and manually go back
-            stopCarousel();
-            prevImage();
-        } else {
-            // If the carousel is stopped, manually go back
-            prevImage();
-        }
+        prevImage();
     };
 
     return (
@@ -141,14 +111,13 @@ const ComfortWomen = () => {
                         <h2 className={style.descH2}>Mujeres de <br />Confort</h2>
                         <p className={style.descP}>Durante la Segunda Guerra Mundial, el término "Mujeres de Confort" se utilizó para encubrir a las mujeres esclavizadas sexualmente por el ejército japonés en Asia (1932-1945).</p>
                     </div>
+                    <div className={style.carouselContainer}>
                     <div className={style.carouselButtons}>
                         <button onClick={prevManualImage} className={style.chevron}>&#8249;</button>
-                        <button onClick={isCarouselRunning ? stopCarousel : startCarousel} className={style.start - stop}>
-                            {isCarouselRunning ? '■' : '▶'}
-                        </button>
                         <button onClick={nextManualImage} className={style.chevron}>&#8250;</button>
                     </div>
                     <img className={style.descImg} src={images[currentImageIndex]} alt="Mujeres de confort" />
+                </div>
                 </div>
                 <div className={style.infoDiv}>
                     <div className={style.titleDiv}>
