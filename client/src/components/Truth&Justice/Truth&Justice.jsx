@@ -149,15 +149,21 @@ const TruthJustice = () => {
                     </div>
                 </div>
                 <div className={style.infoDiv}>
-                    <div className={style.titleDiv}>
+                <div className={style.titleDiv}>
                         {textData.map(item => (
+                            <>
                             <button
                                 key={item.title}
                                 className={selectedTitle === item.title ? style.selectedTitle : style.titleButton}
                                 onClick={() => setSelectedTitle(item.title)}
                             >
-                                {item.title}
+                               <div className={style.titleText}>{item.title}</div> 
+                                
                             </button>
+                            <div className={style.selectorDiv}>
+                                <div className={selectedTitle === item.title ? style.selectorOn : style.selectorOff}></div>
+                            </div>
+                            </>
                         ))}
                     </div>
                     {
