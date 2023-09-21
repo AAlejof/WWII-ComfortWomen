@@ -1,26 +1,40 @@
 import style from './Navbar.module.css';
-import { Link } from 'react-router-dom';
-import React from 'react';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'; 
 
 const Navbar = () => {
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
+
     return (
         <>
             <div className={style.navbarDiv}>
                 <p className={style.pNavbarDiv}>
-                    <Link to='/'>MUJERES DE CONFORT</Link>
+                <ScrollLink to="comfortWomen" spy={true} smooth={true} offset={-70} duration={700}>
+                        MUJERES DE CONFORT
+                    </ScrollLink>
                 </p>
                 <p className={style.pNavbarDiv}>
-                    <Link to='/'>VERDAD Y JUSTICIA</Link>
+                <ScrollLink to="truthJustice" spy={true} smooth={true} offset={-70} duration={700}>
+                        VERDAD Y JUSTICIA
+                    </ScrollLink>
                 </p>
                 <p className={style.pNavbarDiv}>
-                    <Link to='/'>DIFUSIÓN</Link>
+                    <ScrollLink to="difussion" spy={true} smooth={true} offset={-70} duration={700}>
+                        DIFUSIÓN
+                    </ScrollLink>
                 </p>
                 <p className={style.pNavbarDiv}>
-                    <Link to='/'>NOTICIAS</Link>
+                <ScrollLink to="news" spy={true} smooth={true} offset={-70} duration={700}>
+                        NOTICIAS
+                    </ScrollLink>
                 </p>
                 <p className={style.pNavbarDiv}>
-                    <Link to='/'>CONTACTO</Link>
+                <ScrollLink to="contact" spy={true} smooth={true} offset={-70} duration={700}>
+                        CONTACTO
+                    </ScrollLink>
                 </p>
+                <span className={style['floating-chevron']} onClick={scrollToTop}>&#8248;</span>
             </div>
         </>
     )
