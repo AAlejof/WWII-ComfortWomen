@@ -2,7 +2,7 @@ import style from './CardDetail.module.css';
 import React, { useState } from 'react';
 
 
-const CardDetail = () => {
+const CardDetail = ({ onClose }) => {
     return (
 
         <div className={style.cardContainer}>
@@ -16,6 +16,7 @@ const CardDetail = () => {
                     After registering as a victim, she travels to inform people of the Japanese military sexual slavery and passionately engages in different activities such as the Wednesday Demonstration to resolve the Japanese military sexual slavery issue. On International Women’s Day on March 8th, 2012, she established the Butterfly Fund, to direct any reparation she would receive from the Japanese government to support victims of sexual violence in armed conflict.
                     On May 17th, 2017, Gil Won-ok founded Gil Won-ok Women’s Peace Prize to support activists who work for women’s rights, peace, and reunification movement in Korea.</p>
             </div>
+            <button className={style.closeBtn} onClick={onClose}>x</button>
         </div>
 
     )

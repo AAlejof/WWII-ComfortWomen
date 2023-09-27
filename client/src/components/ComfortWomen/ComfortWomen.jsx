@@ -4,10 +4,12 @@ import image1 from '../../assets/img/home/homeImg.png';
 import image2 from '../../assets/img/home/homeImg2.png';
 import image3 from '../../assets/img/home/homeImg3.png';
 import Card from './Card/Card';
+import CardDetail from './Detail/CardDetail';
 
 const ComfortWomen = () => {
     const [selectedTitle, setSelectedTitle] = useState("¿Quiénes son?");
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [isCardDetailVisible, setCardDetailVisible] = useState(false);
 
     const images = [image1, image2, image3];
 
@@ -103,6 +105,11 @@ const ComfortWomen = () => {
         prevImage();
     };
 
+
+    const toggleCardDetail = () => {
+        setCardDetailVisible(!isCardDetailVisible);
+    };
+
     return (
         <>
             <div>
@@ -112,46 +119,50 @@ const ComfortWomen = () => {
                         <p className={style.descP}>Durante la Segunda Guerra Mundial, el término "Mujeres de Confort" se utilizó para encubrir a las mujeres esclavizadas sexualmente por el ejército japonés en Asia (1932-1945).</p>
                     </div>
                     <div className={style.carouselContainer}>
-                    <div className={style.carouselButtons}>
-                        <button onClick={prevManualImage} className={style.chevron}>&#8249;</button>
-                        <button onClick={nextManualImage} className={style.chevron}>&#8250;</button>
+                        <div className={style.carouselButtons}>
+                            <button onClick={prevManualImage} className={style.chevron}>&#8249;</button>
+                            <button onClick={nextManualImage} className={style.chevron}>&#8250;</button>
+                        </div>
+                        <img className={style.descImg} src={images[currentImageIndex]} alt="Mujeres de confort" />
                     </div>
-                    <img className={style.descImg} src={images[currentImageIndex]} alt="Mujeres de confort" />
-                </div>
                 </div>
                 <div className={style.infoDiv}>
                     <div className={style.titleDiv}>
                         {textData.map(item => (
                             <>
-                            <button
-                                key={item.title}
-                                className={selectedTitle === item.title ? style.selectedTitle : style.titleButton}
-                                onClick={() => setSelectedTitle(item.title)}
-                            >
-                               <div className={style.titleText}>{item.title}</div> 
-                                
-                            </button>
-                            <div className={style.selectorDiv}>
-                                <div className={selectedTitle === item.title ? style.selectorOn : style.selectorOff}></div>
-                            </div>
+                                <button
+                                    key={item.title}
+                                    className={selectedTitle === item.title ? style.selectedTitle : style.titleButton}
+                                    onClick={() => setSelectedTitle(item.title)}
+                                >
+                                    <div className={style.titleText}>{item.title}</div>
+
+                                </button>
+                                <div className={style.selectorDiv}>
+                                    <div className={selectedTitle === item.title ? style.selectorOn : style.selectorOff}></div>
+                                </div>
                             </>
                         ))}
                     </div>
-                    {
-                        (selectedTitle === "Testimonios") ?
-                            <div className={style.contentDiv}><Card /><Card /><Card /></div> :
-
-                            <div className={style.contentDiv}>
-                                <div className={style.summaryDiv}>
-                                    {textData.find(item => item.title === selectedTitle)?.summary}
-                                </div>
-                                <div className={style.textDiv}>
-                                    {textData.find(item => item.title === selectedTitle)?.text}
-                                </div>
+                    <div className={style.contentDiv}>
+                        {selectedTitle === 'Testimonios' ? (
+                            <div>
+                                <Card onClick={toggleCardDetail} />
+                                {isCardDetailVisible && <CardDetail onClose={toggleCardDetail} />}
                             </div>
-                    }
+                        ) : (
+                            <div className={style.summaryDiv}>
+                                {textData.find((item) => item.title === selectedTitle)?.summary}
+                            </div>
+                        )}
+
+                    <div className={style.textDiv}>
+                        {textData.find(item => item.title === selectedTitle)?.text}
+                    </div>
+                    </div>
                 </div>
-            </div>
+
+            </div >
         </>
     );
 }
