@@ -3,6 +3,7 @@ import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 import Dashboard from './components/Dashboard/Dashboard';
 import Navbar from './components/Navbar/Navbar';
+import Blog from './components/Blog/Blog'
 import './App.css';
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
 
   const boolAddComponent =
     pathname === '/' ||
-    pathname === '/inicio';
+    pathname === '/blog';
 
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
 
         <Routes>
           <Route path={'/'} element={<Home />}/>
+          <Route path={'/blog'} element={<Blog />}/>
           <Route path={'/admin'} element={<Dashboard />}/>
         </Routes>
 
