@@ -1,46 +1,6 @@
 /* ---------DESKTOP & TABLET--------- */
 @media (min-width: 451px) {
 
-    .descImgDiv {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100vw;
-        height: 575px;
-        margin-top: 60px;
-        background-color: #FFF;
-        padding-bottom: 50px #4D4D4D;
-    }
-
-    .descDiv {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .descH2 {
-        font-family: 'Merriweather';
-        font-size: 45px;
-        text-align: left;
-        color: #1E1E1E;
-        font-weight: 900;
-        padding-top: 5vw;
-        padding-left: 5vw;
-        width: 355px;
-    }
-
-    .descP {
-        font-family: 'Merriweather';
-        font-size: 14px;
-        text-align: left;
-        color: #666666;
-        font-weight: 400;
-        padding-left: 5vw;
-        margin-bottom: 10vh;
-        width: 355px;
-        line-height: 175%;
-    }
-
     /* ---------CARROUSEL-------- */
 
     .descImg {
@@ -55,8 +15,7 @@
     }
 
     .otherNewsDiv {
-        margin-top: 5vh;
-        border: solid 1px #000;
+        margin: 0;
     }
 
     .descImgDiv {
@@ -66,7 +25,7 @@
         align-items: center;
         width: 100vw;
         background-color: #FFF;
-        padding-bottom: 50px #4D4D4D;
+        border-top: solid 1px #000;
     }
 
     .descDiv {
@@ -80,21 +39,8 @@
         text-align: left;
         color: #1E1E1E;
         font-weight: 900;
-        padding-top: 5vw;
         padding-left: 5vw;
         width: 355px;
-    }
-
-    .descP {
-        font-family: 'Merriweather';
-        font-size: 14px;
-        text-align: left;
-        color: #666666;
-        font-weight: 400;
-        padding-left: 5vw;
-        margin-bottom: 10vh;
-        width: 355px;
-        line-height: 175%;
     }
 
     .infoDiv {
@@ -104,12 +50,6 @@
         min-height: 70vh;
         border-bottom: 50px solid;
         border-image: linear-gradient(to right, #FFF 37%, #4D4D4D 37%) 1;
-    }
-
-    .titleDiv {
-        display: flex;
-        justify-content: space-between;
-        padding: 5%;
     }
 
     .contentDiv {
