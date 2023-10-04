@@ -29,4 +29,4 @@ const getPublicationsByName = async (req, res) => {
     }
 }
 
-module.exports = getPublicationsByName
+module.exports = getPublicationsByName;
