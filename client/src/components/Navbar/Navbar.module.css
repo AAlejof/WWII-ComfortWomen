@@ -1,40 +1,4 @@
-
 /* ---------DESKTOP & TABLET--------- */
-/* @media (min-width: 451px) {
-    .navbarDiv {
-        margin: 0;
-        position: fixed;
-        top: 0;
-        left:0;
-        display: flex;
-        justify-content: right;
-        align-items: end;
-        width: 100vw;
-        background-color: #FFE14F;
-        z-index: 5;
-    }
-
-    .pNavbarDiv {
-        height: 60px;
-        margin-right: 2%;
-        padding-right: 1.5rem;
-        color: #4D4D4D;
-        font-family: 'Merriweather Sans';
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: -0.2px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-    }
-
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-} */
 
 @media (min-width: 451px) {
     .navbarDiv {
@@ -64,17 +28,17 @@
         display: flex;
         align-items: center;
         text-align: center;
-        cursor: pointer; /* Added cursor pointer on hover */
+        cursor: pointer; 
     }
 
     .pNavbarDiv:hover {
-        background-color: #FFE14F; /* Background color on hover */
+        background-color: #FFE14F;
     }
 
     .floating-chevron {
         width: 40px;
         height: 40px;
-        background-color: transparent; /* Transparent background color */
+        background-color: transparent;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -82,7 +46,7 @@
         position: fixed;
         bottom: 5%;
         right: 3%;
-        cursor: pointer; /* Added cursor pointer */
+        cursor: pointer;
         font-size: 45px;
         opacity: 0.6;
     }
@@ -100,31 +64,53 @@
         margin: 0;
         position: fixed;
         top: 0;
+        left: 0;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: flex-end;
-        height: 101.33px;
+        justify-content: right;
+        align-items: end;
         width: 100vw;
-        background-color: white;
-        border-bottom: solid 0.5px #a4a4a4;
+        background-color: #FFE14F;
+        z-index: 5;
     }
 
     .pNavbarDiv {
-        height: 43.33px;
-        /* font-family: 'Open Sans'; */
+        height: 60px;
+        margin-right: 2%;
+        padding-right: 1.5rem;
+        color: #4D4D4D;
+        font-family: 'Merriweather Sans';
+        font-size: 15px;
         font-style: normal;
         font-weight: 400;
-        font-size: 40px;
-        line-height: 20px;
+        line-height: normal;
+        letter-spacing: -0.2px;
         display: flex;
         align-items: center;
         text-align: center;
-        letter-spacing: -0.2px;
+        cursor: pointer; 
     }
 
-    a {
-        text-decoration: none;
-        color: inherit;
+    .pNavbarDiv:hover {
+        background-color: #FFE14F;
+    }
+
+    .floating-chevron {
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 5%;
+        right: 3%;
+        cursor: pointer;
+        font-size: 45px;
+        opacity: 0.6;
+    }
+
+    .floating-chevron:hover {
+        opacity: 1;
     }
 }
