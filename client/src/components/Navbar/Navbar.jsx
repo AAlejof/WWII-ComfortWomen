@@ -19,7 +19,7 @@ const Navbar = () => {
                             MUJERES DE CONFORT
                         </Link>
                     </p>
-                    <p className={style.pNavbarDiv}>
+                    {/* <p className={style.pNavbarDiv}>
                         <ScrollLink to="truthJustice" spy={true} smooth={true} offset={-70} duration={700}>
                             VERDAD Y JUSTICIA
                         </ScrollLink>
@@ -38,7 +38,7 @@ const Navbar = () => {
                         <ScrollLink to="contact" spy={true} smooth={true} offset={-70} duration={700}>
                             CONTACTO
                         </ScrollLink>
-                    </p>
+                    </p> */}
                     <span className={style['floating-chevron']} onClick={scrollToTop}>&#8248;</span>
                 </div> :
 
