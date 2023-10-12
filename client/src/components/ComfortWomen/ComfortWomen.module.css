@@ -85,6 +85,8 @@
         background-color: #4D4D4D;
         width: 100vw;
         height: max-content;
+        border-top: 30px solid ;
+        border-image: linear-gradient(to right, #4D4D4D 37%, #FFF 37%) 1;
     }
 
     .titleDiv {
