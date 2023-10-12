@@ -12,37 +12,18 @@ const Navbar = () => {
 
     return (
         <>
-            {(location.pathname === '/blog') ?
-                <div className={style.navbarDiv}>
+            {(location.pathname === '/blog' || location.pathname ==='/admin') ?
+               (<div className={style.navbarDiv}>
                     <p className={style.pNavbarDiv}>
                         <Link to="/" >
                             MUJERES DE CONFORT
                         </Link>
                     </p>
-                    {/* <p className={style.pNavbarDiv}>
-                        <ScrollLink to="truthJustice" spy={true} smooth={true} offset={-70} duration={700}>
-                            VERDAD Y JUSTICIA
-                        </ScrollLink>
-                    </p>
-                    <p className={style.pNavbarDiv}>
-                        <ScrollLink to="difussion" spy={true} smooth={true} offset={-70} duration={700}>
-                            DIFUSIÓN
-                        </ScrollLink>
-                    </p>
-                    <p className={style.pNavbarDiv}>
-                        <ScrollLink to="news" spy={true} smooth={true} offset={-70} duration={700}>
-                            NOTICIAS
-                        </ScrollLink>
-                    </p>
-                    <p className={style.pNavbarDiv}>
-                        <ScrollLink to="contact" spy={true} smooth={true} offset={-70} duration={700}>
-                            CONTACTO
-                        </ScrollLink>
-                    </p> */}
-                    <span className={style['floating-chevron']} onClick={scrollToTop}>&#8248;</span>
-                </div> :
 
-                <div className={style.navbarDiv}>
+                    <span className={style['floating-chevron']} onClick={scrollToTop}>&#8248;</span>
+                </div>) :
+
+                (<div className={style.navbarDiv}>
                     <p className={style.pNavbarDiv}>
                         <ScrollLink to="comfortWomen" spy={true} smooth={true} offset={-70} duration={700}>
                             MUJERES DE CONFORT
@@ -69,7 +50,7 @@ const Navbar = () => {
                         </ScrollLink>
                     </p>
                     <span className={style['floating-chevron']} onClick={scrollToTop}>&#8248;</span>
-                </div>
+                </div>)
             }
         </>
     )
