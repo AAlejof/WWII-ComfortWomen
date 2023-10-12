@@ -3,8 +3,8 @@
     flex-direction: column;
     justify-content: left;
     margin: 1%;
-    width: 440px;
-    height: 550px;
+    width: 90%;
+    height: 450px;
     opacity: 0.7;
 }
 
@@ -14,8 +14,8 @@
 }
 
 .cardImg {
-    width: 440px;
-    height: 370px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -23,7 +23,7 @@
     margin: 0;
     color: #FFF;
     font-family: Merriweather Sans;
-    font-size: 25px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -33,7 +33,7 @@
     margin: 0;
     color: #FFF;
     font-family: Merriweather Sans;
-    font-size: 15px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 300;
     line-height: 160%;
@@ -42,7 +42,7 @@
 .cardP {
     color: #FFF;
     font-family: Merriweather;
-    font-size: 18px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 300;
     line-height: 175%;
