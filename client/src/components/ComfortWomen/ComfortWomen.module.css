@@ -85,6 +85,8 @@
         background-color: #4D4D4D;
         width: 100vw;
         height: max-content;
+        border-top: 30px solid ;
+        border-image: linear-gradient(to right, #4D4D4D 37%, #FFF 37%) 1;
     }
 
     .titleDiv {
@@ -94,6 +96,7 @@
         text-align: left;
         padding: 2%;
         flex-wrap: wrap;
+        margin-top: 5%;
         /* justify-content: space-around; */
     }
 
@@ -328,9 +331,9 @@
         border-bottom: 2px solid #FFF;
         color: #FFF;
         font-family: Merriweather;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
-        font-weight: 900;
+        font-weight: 700;
         line-height: 150%;
         letter-spacing: 3.5px;
         text-transform: uppercase;
@@ -347,9 +350,9 @@
         border-bottom: 1px solid #6D6D6D;
         color: #A1A1A1;
         font-family: Merriweather;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
-        font-weight: 900;
+        font-weight: 700;
         line-height: 150%;
         letter-spacing: 3.5px;
         text-transform: uppercase;
