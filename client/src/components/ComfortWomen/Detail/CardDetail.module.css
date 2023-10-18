@@ -1,75 +1,158 @@
-.cardContainer {
-    position: absolute;
-    left: 50%;
-    top: 89%;
-    transform: translate(-50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    margin: 1%;
-    width: 800px;
-    padding: 45px;
-    height: auto;
-    opacity: 1;
-    z-index: 2;
-    background-color: #FFF;
+/* ---------MOBILE--------- */
+@media (max-width: 450px) {
+
+    .cardContainer {
+        position: absolute;
+        left: 50%;
+        top: 89%;
+        transform: translate(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin: 1%;
+        width: 300px;
+        padding: 45px;
+        height: auto;
+        opacity: 1;
+        z-index: 2;
+        background-color: #FFF;
+        
+    }
+
+    .name {
+        color: #000;
+        margin-bottom: 0;
+        font-family: Merriweather Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .desc {
+        margin: 0;
+        color: #000;
+        font-family: Merriweather Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%;
+    }
+
+    .cardP {
+        color: #4D4D4D;
+        font-family: Merriweather;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 175%;
+        padding-right: 10%;
+        height: 350px;
+        overflow: scroll;
+    }
+
+    .closeBtn {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: flex;
+        width: 20px;
+        height: 19px;
+        padding: 10px 15px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #000;
+        background-color: #FFF;
+        color: #000;
+        text-align: center;
+        font-family: Merriweather Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
 }
 
-.cardImg {
-    width: 440px;
-    height: 370px;
-    object-fit: cover;
+
+/* ---------DESKTOP & TABLET--------- */
+@media (min-width: 451px) {
+
+    .cardContainer {
+        position: absolute;
+        left: 50%;
+        top: 89%;
+        transform: translate(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin: 1%;
+        width: 800px;
+        padding: 45px;
+        height: auto;
+        opacity: 1;
+        z-index: 2;
+        background-color: #FFF;
+    }
+
+    .name {
+        color: #000;
+        margin-bottom: 0;
+        font-family: Merriweather Sans;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .desc {
+        margin: 0;
+        color: #000;
+        font-family: Merriweather Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%;
+    }
+
+    .cardP {
+        color: #4D4D4D;
+        font-family: Merriweather;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 175%;
+        padding-right: 50px;
+        height: 400px;
+        overflow: auto;
 }
 
-.name {
-    color: #000;
-    margin-bottom: 0;
-    font-family: Merriweather Sans;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
+    
 
-.desc {
-    margin: 0;
-    color: #000;
-    font-family: Merriweather Sans;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 160%;
-}
+    .closeBtn {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: flex;
+        width: 60px;
+        height: 59px;
+        ;
+        padding: 20px 25px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #000;
+        background-color: #FFF;
+        color: #000;
+        text-align: center;
+        font-family: Merriweather Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
 
-.cardP {
-    color: #4D4D4D;
-    font-family: Merriweather;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 175%;
-    padding-right: 50px;
-}
-
-.closeBtn {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    display: flex;
-    width: 60px;
-    height: 59px;;
-    padding: 20px 25px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid #000;
-    background-color: #FFF;
-    color: #000;
-    text-align: center;
-    font-family: Merriweather Sans;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
 }
