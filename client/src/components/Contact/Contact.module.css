@@ -1,3 +1,92 @@
+/* ---------MOBILE--------- */
+@media (max-width: 450px) {
+    .contactDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        background-color: #4D4D4D;
+        padding-bottom: 40px #4D4D4D;
+    }
+
+    .descDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .descH2 {
+        font-family: 'Merriweather';
+        font-size: 35px;
+        text-align: left;
+        color: #FFF;
+        font-weight: 700;
+        padding-top: 3vw;
+        padding-left: 5vw;
+        width: 355px;
+    }
+
+
+    .infoDiv {
+        background-color: #4D4D4D;
+        width: 100vw;
+        height: max-content;
+    }
+
+    .contentDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 5%;
+        text-align: left;
+    }
+
+    .formDiv {
+        width: 80%;
+        padding-left: 5vw;
+        padding-bottom: 5vh;
+    }
+
+    .contactMeansDiv {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding-left: 5vw;
+    }
+
+    .contactP {
+        font-family: 'Merriweather Sans';
+        font-size: 12px;
+        text-align: left;
+        color: #FFF;
+        font-weight: 300;
+        padding-left: 5vw;
+        margin-bottom: 5vh;
+        width: 355px;
+        line-height: 175%;
+    }
+
+    .contactA {
+        text-decoration: none;
+        color: #FFF;
+        font-family: Merriweather Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 175%;
+        text-decoration-line: underline;
+    }
+
+    .contactA:hover {
+        color: #FFF;
+    }
+
+    .contactIcons {
+        display: flex;
+        padding-left: 5vw;
+    }
+}
+
 /* ---------DESKTOP & TABLET--------- */
 @media (min-width: 451px) {
 

@@ -43,7 +43,7 @@
         width: 100vw;
         height: max-content;
         min-height: 60vh;
-        border-bottom: 50px solid;
+        border-bottom: 30px solid;
         border-image: linear-gradient(to right, #D9D9D9 37%, #FFF 37%) 1;
     }
 
