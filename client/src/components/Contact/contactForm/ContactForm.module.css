@@ -1,3 +1,92 @@
+/* ---------MOBILE--------- */
+@media (max-width: 450px) {
+
+    .formContainer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .formP {
+        color: #FFF;
+        font-family: Merriweather;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 175%;
+    }
+
+    .formDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 350px;
+        height: 500px;
+        margin-bottom: 20px;
+    }
+
+    .formInput {
+        display: flex;
+        width: 75%;
+        padding: 8px 0px;
+        align-items: flex-start;
+        gap: 10px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #6D6D6D;
+        background-color: #4D4D4D;
+        color: #A1A1A1;
+        font-family: Merriweather Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 175%;
+    }
+
+    .bigBoxInput {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        width: 75%;
+        height: 150px;
+        padding: 8px 0px;
+        gap: 10px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #6D6D6D;
+        background-color: #4D4D4D;
+        color: #A1A1A1;
+        font-family: Merriweather Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 175%;
+    }
+
+    .btnDiv {
+        display: inline-flex;
+        width: 126px;
+        height: 47px;
+        padding: 20px 25px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: #4D4D4D;
+        border: 1px solid #FFF;
+        color: #FFF;
+        text-align: center;
+        font-family: Merriweather Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 3.75px;
+        margin-bottom: 3%;
+    }
+}
+
+
 /* ---------DESKTOP & TABLET--------- */
 @media (min-width: 451px) {
 

@@ -5,9 +5,11 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 100vw;
+        width: 100%;
         background-color: #4D4D4D;
         padding-bottom: 40px #4D4D4D;
+        background-color: #4D4D4D;
+        border:  solid #4D4D4D;
     }
 
     .descDiv {
@@ -61,7 +63,7 @@
         color: #FFF;
         font-weight: 300;
         padding-left: 5vw;
-        margin-bottom: 5vh;
+        margin-bottom: 3vh;
         width: 355px;
         line-height: 175%;
     }

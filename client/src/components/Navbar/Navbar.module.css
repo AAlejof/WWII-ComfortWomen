@@ -1,5 +1,141 @@
 /* ---------DESKTOP & TABLET--------- */
 
+/* @media (min-width: 451px) {
+    .navbarDiv {
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: right;
+        align-items: end;
+        width: 100vw;
+        background-color: #FFE14F;
+        z-index: 5;
+    }
+
+    .pNavbarDiv {
+        height: 60px;
+        margin-right: 2%;
+        padding-right: 1.5rem;
+        color: #4D4D4D;
+        font-family: 'Merriweather Sans';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.2px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        cursor: pointer; 
+    }
+
+    .pNavbarDiv:hover {
+        background-color: #FFE14F;
+    }
+
+    .floating-chevron {
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 5%;
+        right: 3%;
+        cursor: pointer;
+        font-size: 45px;
+        opacity: 0.6;
+    }
+
+    .floating-chevron:hover {
+        opacity: 1;
+    }
+}
+ */
+
+
+/* ---------MOBILE--------- */
+/* @media (max-width: 450px) { */
+    
+    
+
+    
+
+    /* .navbarDiv {
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: end;
+        width: 100vw;
+        background-color: #FFE14F;
+        z-index: 5;
+    }
+
+    .pNavbarDiv {
+        height: 60px;
+        margin-right: 2%;
+        padding-right: 1.5rem;
+        color: #4D4D4D;
+        font-family: 'Merriweather Sans';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.2px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        cursor: pointer; 
+    }
+
+    .pNavbarDiv:hover {
+        background-color: #FFE14F;
+    } */
+
+    /* .floating-chevron {
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 5%;
+        right: 3%;
+        cursor: pointer;
+        font-size: 45px;
+        opacity: 0.6;
+    }
+
+    .floating-chevron:hover {
+        opacity: 1;
+    }
+} */
+
+/* Common styles for both mobile and desktop */
+.navbarDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    width: 100vw;
+    height: 40px;
+    background-color: #FFE14F;
+    z-index: 5;
+}
+
+/* Desktop styles */
 @media (min-width: 451px) {
     .navbarDiv {
         margin: 0;
@@ -56,9 +192,7 @@
     }
 }
 
-
-
-/* ---------MOBILE--------- */
+/* Mobile styles */
 @media (max-width: 450px) {
     .navbarDiv {
         margin: 0;
@@ -66,8 +200,9 @@
         top: 0;
         left: 0;
         display: flex;
-        justify-content: right;
-        align-items: end;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100vw;
         background-color: #FFE14F;
         z-index: 5;
@@ -75,8 +210,8 @@
 
     .pNavbarDiv {
         height: 60px;
-        margin-right: 2%;
-        padding-right: 1.5rem;
+        /* margin-right: 2%;
+        padding-right: 1.5rem; */
         color: #4D4D4D;
         font-family: 'Merriweather Sans';
         font-size: 15px;
@@ -104,13 +239,43 @@
         border-radius: 50%;
         position: fixed;
         bottom: 5%;
-        right: 3%;
+        right: 10%;
         cursor: pointer;
         font-size: 45px;
-        opacity: 0.6;
+        opacity: 0.5;
     }
 
     .floating-chevron:hover {
         opacity: 1;
+    }
+    
+    /* Styles for the hamburger icon */
+    .hamburgerNav {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Styles for the hamburger bars */
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #4D4D4D;
+        margin: 3px 0;
+        transition: 0.4s;
+        
+    }
+
+    .menuIcon {
+        display: block; /* Show menu icon on mobile */
+    }
+
+    .open {
+        height: auto;
     }
 }

@@ -1,12 +1,17 @@
 /* ---------MOBILE--------- */
 @media (max-width: 450px) {
+
+    .cwContainer {
+        background-color: #4D4D4D;
+    }
+
     .descImgDiv {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center;
         width: 100vw;
-        margin-top: 60px;
+        margin-top: 40px;
         background-color: #FFF;
         padding-bottom: 50px #4D4D4D;
     }
