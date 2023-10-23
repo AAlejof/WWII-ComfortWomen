@@ -112,7 +112,7 @@ const ComfortWomen = () => {
 
     return (
         <>
-            <div>
+            <div className={style.cwContainer}>
                 <div className={style.descImgDiv}>
                     <div className={style.descDiv}>
                         <h2 className={style.descH2}>Mujeres de <br />Confort</h2>

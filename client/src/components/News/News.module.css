@@ -1,5 +1,11 @@
 /* ---------MOBILE--------- */
 @media (max-width: 450px) {
+
+    .newsContainer {
+        background-color: #FFF;
+        
+    }
+
     .descImgDiv {
         display: flex;
         flex-direction: row;
