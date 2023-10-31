@@ -7,27 +7,25 @@ const putContact = async (req, res) => {
         const { id } = req.params;
         
         const { 
-            url,
-            name,
-            review,
-            fav,
-            rate
+            author_name,
+            tag,
+            content,
+            mail,
         } = req.body;
     
     
         await contact.update({
-                url,
-                name,
-                review,
-                fav,
-                rate
+            author_name,
+            tag,
+            content,
+            mail,
             }, {
             where:{
                 id: id
             }
         })
 
-        res.status(200).send("Testimonial succesfully modificated")
+        res.status(200).send("Message succesfully modificated")
         
     } catch (error) {
         res.status(400).send(error.message)

@@ -4,16 +4,16 @@ const { contact } = require("../../db")
 const postContact = async (req, res) => {
     try {
         const {
-            url,
-            name,
-            review,
-            rate
+            author_name,
+            tag,
+            content,
+            mail
         } = req.body
         const newContact = await contact.create({
-            url,
-            name,
-            review,
-            rate
+            author_name,
+            tag,
+            content,
+            mail
         })
 
         res.status(200).send(newContact)

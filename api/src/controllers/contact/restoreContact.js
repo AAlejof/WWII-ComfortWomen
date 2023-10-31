@@ -8,9 +8,9 @@ const restoreContact = async ({id}) => {
       }
     })
     if (restoredRows === 0) {
-      return "testimony not found or already restored"
+      return "Contact not found or already restored"
     }
-    return "testimony restored successfully"
+    return "Contact restored successfully"
   } catch (error) {
     res.status(400).send(error)
   }
