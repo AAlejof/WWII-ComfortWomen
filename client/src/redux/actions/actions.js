@@ -274,7 +274,7 @@ export const removeAdmin = (id) => {
 
 // ------------CONTACT---------
 
-export const postContact = (review) => async () => {
+export const postContact = (message) => async () => {
 	try {
 		const data = await axios.post("/contact", contact);
 
