@@ -10,7 +10,10 @@ import {
 	DELETE_BLOG,
 	GET_ALL_ADMIN,
 	POST_ADMIN,
-	REMOVE_ADMIN
+	REMOVE_ADMIN,
+	GET_ALL_CONTACT,
+	POST_CONTACT,
+	DELETE_CONTACT
 } from "../actions/action-types.js";
 
 const initialState = {
@@ -25,7 +28,7 @@ const initialState = {
 	},
 	allAdmin: [],
 	edit_button: true,
-	actual_plan: [],
+	contact: [],
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -85,7 +88,7 @@ const rootReducer = (state = initialState, action) => {
 				matched_posts: state?.matched_posts?.filter((el) => el.id !== payload),
 				ig_posts: state.ig_posts?.filter((el) => el.id !== payload),
 			};
-		
+
 		case GET_ALL_ADMIN:
 			return {
 				...state,
@@ -98,6 +101,25 @@ const rootReducer = (state = initialState, action) => {
 		case REMOVE_ADMIN:
 			return {
 				...state,
+			};
+
+		case POST_CONTACT:
+			return {
+				...state,
+				contact: [...state.contact, payload],
+			};
+
+		case GET_ALL_CONTACT:
+			return {
+				...state,
+				contact: payload,
+			};
+		case DELETE_CONTACT:
+			return {
+				...state,
+				contact: state.contact.filter(
+					(message) => message.id !== payload
+				),
 			};
 
 

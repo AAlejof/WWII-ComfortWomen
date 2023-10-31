@@ -5,6 +5,9 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Navbar from './components/Navbar/Navbar';
 import Blog from './components/Blog/Blog'
 import './App.css';
+import axios, { all } from "axios";
+
+axios.defaults.baseURL = "http://localhost:3001";
 
 function App() {
   const location = useLocation();

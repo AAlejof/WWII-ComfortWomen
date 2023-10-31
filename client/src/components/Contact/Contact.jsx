@@ -1,6 +1,6 @@
 import style from './Contact.module.css';
 import React, { useState } from 'react';
-import ContactForm from './contactForm/contactForm';
+import ContactForm from './ContactForm/ContactForm';
 import instagram from '../../assets/img/icons/instagram.png';
 import facebook from '../../assets/img/icons/facebook.png';
 import linkedin from '../../assets/img/icons/linkedIn.png';

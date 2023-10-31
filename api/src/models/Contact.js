@@ -2,13 +2,12 @@ const { DataTypes } = require("sequelize");
 
 const contact = (sequelize) => {
     sequelize.define('contact', {   
-
         author_name: {
             type: DataTypes.TEXT,
         },
         tag: {
             type: DataTypes.ARRAY(DataTypes.STRING),
-            allowNull: false,
+            allowNull: true,
         },
         content: {
             type: DataTypes.TEXT,

@@ -6,6 +6,14 @@ const putAdmin = require("./admin/putAdmin");
 const restoreAdmin = require("./admin/restoreAdmin");
 const getSoftDeletedAdmin = require("./admin/getSoftDeletedAdmin");
 
+// Contact
+const deleteContact = require("./contact/deleteContact");
+const getAllContact = require("./contact/getAllContact");
+const getSoftDeletedContact = require("./contact/getSoftDeletedContact");
+const postContact = require("./contact/postContact");
+const putContact = require("./contact/putContact");
+const restoreContact = require("./contact/restoreContact")
+
 // Publications
 const createPublication = require("./publications/createPublication");
 const deletePublication = require("./publications/deletePublication");
@@ -25,6 +33,13 @@ module.exports = {
 	putAdmin,
 	restoreAdmin,
 	getSoftDeletedAdmin,
+	// Contact
+	deleteContact,
+	getAllContact,
+	getSoftDeletedContact,
+	postContact,
+	putContact,
+	restoreContact,
     // Publications
 	createPublication,
 	deletePublication,
