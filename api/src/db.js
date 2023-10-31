@@ -29,7 +29,6 @@ Contact(db)
 const {
     admin,
 	publication,
-	contact
 } = db.models;
 
 
