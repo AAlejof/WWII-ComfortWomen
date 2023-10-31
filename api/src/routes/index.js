@@ -8,7 +8,7 @@ const contact = require('./contact.router')
 
 router.use('/publications', publications);
 router.use('/admin', admin);
-router.use('contact', contact)
+router.use('/contact', contact)
 //router.use('/mail', mails);
 
 
