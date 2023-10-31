@@ -11,6 +11,9 @@ import {
 	GET_ALL_ADMIN,
 	POST_ADMIN,
 	REMOVE_ADMIN,
+	GET_ALL_CONTACT,
+	POST_CONTACT,
+	DELETE_CONTACT
 } from "./action-types.js";
 import axios from "axios";
 
@@ -260,6 +263,59 @@ export const removeAdmin = (id) => {
 			const response = await axios.delete(`/admin/${id}`);
 			return dispatch({
 				type: REMOVE_ADMIN,
+				payload: id,
+			});
+		} catch (error) {
+			console.log(error);
+		}
+	};
+};
+
+
+// ------------CONTACT---------
+
+export const postContact = (review) => async () => {
+	try {
+		const data = await axios.post("/contact", contact);
+
+		return dispatch({
+			type: POST_CONTACT,
+			payload: data,
+		});
+	} catch (error) {
+		console.log(error);
+	}
+};
+
+export const putContact = (id, data) => async () => {
+	try {
+		const response = await axios.put(`/contact/${id}`, data);
+		return response;
+	} catch (error) {
+		console.log(error);
+	}
+};
+
+export const getAllContact = () => {
+	return async function (dispatch) {
+		try {
+			const response = await axios.get("/contact");
+			return dispatch({
+				type: GET_ALL_CONTACT,
+				payload: response.data,
+			});
+		} catch (error) {
+			console.log(error);
+		}
+	};
+};
+
+export const deleteContact = (id) => {
+	return async function (dispatch) {
+		try {
+			const response = await axios.delete(`/testimonials/${id}`);
+			return dispatch({
+				type: DELETE_CONTACT,
 				payload: id,
 			});
 		} catch (error) {
