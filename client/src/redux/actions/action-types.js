@@ -19,9 +19,8 @@ export const GET_ALL_ADMIN = "GET_ALL_ADMIN";
 export const POST_ADMIN = "POST_ADMIN";
 export const REMOVE_ADMIN = "REMOVE_ADMIN";
 
-//todo TESTIMONIALS, ACTIVITIES and PLANS
+// CONTACT
 export const GET_ALL_CONTACT = 'GET_ALL_CONTACT';
 export const POST_CONTACT = 'POST_CONTACT';
 export const PUT_CONTACT = 'PUT_CONTACT';
-export const REVIEW = 'REVIEW';
 export const DELETE_CONTACT = "DELETE_CONTACT";
