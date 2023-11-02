@@ -6,7 +6,7 @@ const contact = (sequelize) => {
             type: DataTypes.TEXT,
         },
         tag: {
-            type: DataTypes.ARRAY(DataTypes.STRING),
+            type: DataTypes.TEXT,
             allowNull: true,
         },
         content: {
