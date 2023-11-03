@@ -1,6 +1,7 @@
 import style from './Dashboard.module.css';
 import { Link } from 'react-router-dom';
 import React, { useState }from 'react';
+import ContactMessages from './ContactMessages/ContactMessages';
 
 const Dashboard = () => {
 
@@ -14,8 +15,7 @@ const Dashboard = () => {
         },
         {
             title: "Contacto",
-            component: "gatito"
-
+            component: (<ContactMessages/>)
         },
     ]
 

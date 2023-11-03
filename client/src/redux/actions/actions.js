@@ -276,7 +276,7 @@ export const removeAdmin = (id) => {
 
 export const postContact = (message) => async () => {
 	try {
-		const data = await axios.post("/contact", contact);
+		const data = await axios.post("/contact", message);
 
 		return dispatch({
 			type: POST_CONTACT,
