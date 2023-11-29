@@ -1,0 +1,17 @@
+.messagesDiv {
+    color: #000;
+}
+
+.messagesDiv td {
+    max-width: 400px;
+    height: max-content;
+    word-wrap: break-word;
+    padding-top: 15px;
+    border-bottom: 1px solid #000;
+}
+
+.tableButton {
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+}
