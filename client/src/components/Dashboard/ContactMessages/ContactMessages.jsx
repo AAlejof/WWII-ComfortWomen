@@ -5,6 +5,7 @@ import {
 	putContact,
 	deleteContact,
 } from '../../../redux/actions/actions';
+import style from './ContactMessages.module.css'
 
 const ContactMessages = () => {
 
@@ -19,17 +20,29 @@ const ContactMessages = () => {
     dispatch(deleteContact(id)); // Dispatch the action to delete a contact
   };
 
+  function formatCreatedAt(createdAt) {
+    const date = new Date(createdAt);
+    const day = date.getDate().toString().padStart(2, '0');
+    const month = (date.getMonth() + 1).toString().padStart(2, '0');
+    const year = date.getFullYear().toString().slice(2);
+    const hours = date.getHours().toString().padStart(2, '0');
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+  
+    return `${day}/${month}/${year} ${hours}:${minutes}`;
+  }
+  
+
   return (
-    <div>
-      <h1>Contact Messages</h1>
+    <div className={style.messagesDiv}>
+      <h1>Mensajes</h1>
       <table>
         <thead>
           <tr>
-            <th>Author Name</th>
-            <th>Tag</th>
-            <th>Content</th>
-            <th>Email</th>
-            <th>Actions</th>
+            <th>Nombre</th>
+            <th>Asunto</th>
+            <th>Contenido</th>
+            <th>Mail</th>
+            <th>Borrar</th>
           </tr>
         </thead>
         <tbody>
@@ -39,9 +52,10 @@ const ContactMessages = () => {
               <td>{contact?.tag}</td>
               <td>{contact?.content}</td>
               <td>{contact?.mail}</td>
-              <td>
+              <td>{formatCreatedAt(contact.createdAt)}</td>
+              <td className={style.tableButton}>
                 <button onClick={() => handleDeleteContact(contact.id)}>
-                  Delete
+                  X
                 </button>
               </td>
             </tr>
