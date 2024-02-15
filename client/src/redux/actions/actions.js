@@ -313,7 +313,7 @@ export const getAllContact = () => {
 export const deleteContact = (id) => {
 	return async function (dispatch) {
 		try {
-			const response = await axios.delete(`/testimonials/${id}`);
+			const response = await axios.delete(`/contact/${id}`);
 			return dispatch({
 				type: DELETE_CONTACT,
 				payload: id,
