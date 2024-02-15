@@ -5,6 +5,7 @@ import {
 	putContact,
 	deleteContact,
 } from '../../../redux/actions/actions';
+import swal from 'sweetalert';
 import style from './ContactMessages.module.css'
 
 const ContactMessages = () => {
@@ -16,8 +17,29 @@ const ContactMessages = () => {
     dispatch(getAllContact()); // Dispatch the action to fetch contacts when the component mounts
   }, [dispatch]);
 
-  const handleDeleteContact = (id) => {
-    dispatch(deleteContact(id)); // Dispatch the action to delete a contact
+  // const handleDeleteContact = (id) => {
+  //   dispatch(deleteContact(id)); // Dispatch the action to delete a contact
+  // };
+
+  const handleDeleteContact = async (id) => {
+    
+    swal({
+			title: "Querés borrar este mensaje?",
+			text: "Si es así, click en Ok",
+			icon: "warning",
+			buttons: true,
+			dangerMode: true,
+		}).then((result) => {
+			if (result) {
+				dispatch(deleteContact(id)); // Dispatch the action to delete a contact
+				swal({
+					title: "Mensaje borrado!",
+					icon: "success",
+				});
+			} else {
+				swal("Descartado", "", "info");
+			}
+		});
   };
 
   function formatCreatedAt(createdAt) {
