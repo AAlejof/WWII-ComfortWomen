@@ -287,14 +287,6 @@ export const postContact = (message) => async () => {
 	}
 };
 
-export const putContact = (id, data) => async () => {
-	try {
-		const response = await axios.put(`/contact/${id}`, data);
-		return response;
-	} catch (error) {
-		console.log(error);
-	}
-};
 
 export const getAllContact = () => {
 	return async function (dispatch) {

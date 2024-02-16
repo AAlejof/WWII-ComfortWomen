@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { useDispatch , useSelector } from 'react-redux';
 import {
 	getAllContact,
-	putContact,
 	deleteContact,
 } from '../../../redux/actions/actions';
 import swal from 'sweetalert';
@@ -11,15 +10,11 @@ import style from './ContactMessages.module.css'
 const ContactMessages = () => {
 
   const dispatch = useDispatch();
-  const contacts = useSelector((state) => state.contact); // Assuming you have a "contacts" state in your Redux store
+  const contacts = useSelector((state) => state.contact); 
 
   useEffect(() => {
     dispatch(getAllContact()); // Dispatch the action to fetch contacts when the component mounts
   }, [dispatch]);
-
-  // const handleDeleteContact = (id) => {
-  //   dispatch(deleteContact(id)); // Dispatch the action to delete a contact
-  // };
 
   const handleDeleteContact = async (id) => {
     
