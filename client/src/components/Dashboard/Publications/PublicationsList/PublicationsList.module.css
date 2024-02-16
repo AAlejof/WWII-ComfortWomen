@@ -1,0 +1,18 @@
+.publicationsDiv {
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.publicationsDiv td {
+    max-width: 400px;
+    height: max-content;
+    word-wrap: break-word;
+    padding-top: 15px;
+    border-bottom: 1px solid #000;
+}
+
+.tableButton {
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+}
