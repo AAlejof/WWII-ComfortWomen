@@ -59,6 +59,7 @@ const ContactMessages = () => {
             <th>Asunto</th>
             <th>Contenido</th>
             <th>Mail</th>
+            <th>Fecha</th>
             <th>Borrar</th>
           </tr>
         </thead>
