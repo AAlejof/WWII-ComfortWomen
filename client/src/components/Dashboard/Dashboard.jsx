@@ -2,6 +2,7 @@ import style from './Dashboard.module.css';
 import { Link } from 'react-router-dom';
 import React, { useState }from 'react';
 import ContactMessages from './ContactMessages/ContactMessages';
+import Publications from './Publications/Publications';
 
 const Dashboard = () => {
 
@@ -10,7 +11,7 @@ const Dashboard = () => {
     const textData = [
         {
             title: "Publicaciones",
-            component: "perrito"
+            component: (<Publications/>)
 
         },
         {
