@@ -44,9 +44,6 @@ const Dashboard = () => {
                     <div className={style.summaryDiv}>
                         {textData.find((item) => item.title === selectedTitle)?.component}
                     </div>
-                    {/* <div className={style.textDiv}>
-                        {(textData.find(item => item.title === selectedTitle))? (<div>perrito</div>) : }
-                    </div> */}
                 </div>
             </div>
         </>
