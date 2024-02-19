@@ -4,6 +4,7 @@ import Footer from './components/Footer/Footer';
 import Dashboard from './components/Dashboard/Dashboard';
 import Navbar from './components/Navbar/Navbar';
 import Blog from './components/Blog/Blog'
+import ScrollToTop from "./components/ScrollToTop";
 import './App.css';
 import axios, { all } from "axios";
 
@@ -24,7 +25,7 @@ function App() {
       <div className="App">
 
         {boolAddComponent && <Navbar />}
-
+        <ScrollToTop/>
         <Routes>
           <Route path={'/'} element={<Home />}/>
           <Route path={'/blog'} element={<Blog />}/>
