@@ -16,10 +16,11 @@ const publication = (sequelize) => {
         },
         tag: {
             type: DataTypes.ARRAY(DataTypes.STRING),
-            default: ["noticias"]
+            defaultValue: ["noticias"]
         },
         author_name: {
             type: DataTypes.TEXT,
+            defaultValue: "Fundación Manyoung"
         },
         deletedAt: {
             type: DataTypes.DATE,
