@@ -8,9 +8,6 @@ import {
 	CLEAR_POST_DETAILS,
 	POST_BLOG,
 	DELETE_BLOG,
-	GET_ALL_ADMIN,
-	POST_ADMIN,
-	REMOVE_ADMIN,
 	GET_ALL_CONTACT,
 	POST_CONTACT,
 	DELETE_CONTACT
@@ -222,52 +219,6 @@ export const updateFilters = ({ tag, date }) => {
 	return {
 		type: UPDATE_FILTERS,
 		payload: { tag, date },
-	};
-};
-
-
-
-//-------------ADMIN---------------
-
-export const getAllAdmin = () => {
-	return async function (dispatch) {
-		try {
-			const response = await axios.get("/admin");
-			return dispatch({
-				type: GET_ALL_ADMIN,
-				payload: response.data,
-			});
-		} catch (error) {
-			console.log(error);
-		}
-	};
-};
-
-export const postAdmin = (data) => {
-	return async function (dispatch) {
-		try {
-			await axios.post("/admin", data);
-			return dispatch({
-				type: POST_ADMIN,
-				payload: data,
-			});
-		} catch (error) {
-			console.log(error);
-		}
-	};
-};
-
-export const removeAdmin = (id) => {
-	return async function (dispatch) {
-		try {
-			const response = await axios.delete(`/admin/${id}`);
-			return dispatch({
-				type: REMOVE_ADMIN,
-				payload: id,
-			});
-		} catch (error) {
-			console.log(error);
-		}
 	};
 };
 
