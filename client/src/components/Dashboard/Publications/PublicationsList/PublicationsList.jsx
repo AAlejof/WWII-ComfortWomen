@@ -3,11 +3,11 @@ import { useDispatch , useSelector } from 'react-redux';
 import {
 	getAllContact,
 	deleteContact,
-} from '../../../redux/actions/actions';
+} from '../../../../redux/actions/actions';
 import swal from 'sweetalert';
-import style from './ContactMessages.module.css'
+import style from './PublicationsList.module.css'
 
-const ContactMessages = () => {
+const PublicationsList = () => {
 
   const dispatch = useDispatch();
   const contacts = useSelector((state) => state.contact); 
@@ -19,7 +19,7 @@ const ContactMessages = () => {
   const handleDeleteContact = async (id) => {
     
     swal({
-			title: "Querés borrar este mensaje?",
+			title: "Querés borrar esta publicación?",
 			text: "Si es así, click en Ok",
 			icon: "warning",
 			buttons: true,
@@ -28,7 +28,7 @@ const ContactMessages = () => {
 			if (result) {
 				dispatch(deleteContact(id)); // Dispatch the action to delete a contact
 				swal({
-					title: "Mensaje borrado!",
+					title: "Publicación borrada!",
 					icon: "success",
 				});
 			} else {
@@ -50,16 +50,17 @@ const ContactMessages = () => {
   
 
   return (
-    <div className={style.messagesDiv}>
-      <h1>Mensajes</h1>
+    <div className={style.publicationsDiv}>
+      <h1>Publicaciones</h1>
       <table>
         <thead>
           <tr>
-            <th>Nombre</th>
-            <th>Asunto</th>
+            <th>Título</th>
+            <th>Autor</th>
             <th>Contenido</th>
-            <th>Mail</th>
+            <th>Temas</th>
             <th>Fecha</th>
+            <th>Editar</th>
             <th>Borrar</th>
           </tr>
         </thead>
@@ -71,6 +72,9 @@ const ContactMessages = () => {
               <td>{contact?.content}</td>
               <td>{contact?.mail}</td>
               <td>{formatCreatedAt(contact.createdAt)}</td>
+              <td className={style.tableButton}>
+                <button>✎</button>
+              </td>
               <td className={style.tableButton}>
                 <button onClick={() => handleDeleteContact(contact.id)}>
                   X
@@ -84,4 +88,4 @@ const ContactMessages = () => {
   );
 }
 
-export default ContactMessages;
+export default PublicationsList;
