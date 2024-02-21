@@ -109,7 +109,7 @@ const halmonis = [
     },
     {
         id: 10,
-        image: '/src/assets/img/survivors/HwangGeum-juImg.jpeg',
+        image: 'https://s3-alpha-sig.figma.com/img/1121/7b23/c78e36044295e1fae03bff743ce2ce6d?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ebtxxb3o~n2b-fyWaMmBWPkxHctj0cD6tyLEov53af4ksGepXyqcqbCOB6h80KVvT98P5~HkdHkUBwBHumzu23hFFQaKJ-pP5m80LFcSi6eztJGtFbMSmKOR6CU4-aVdkFBUd8QQDM4QFxMU0WXGbryx0o~AX1Bn33YhmvRsDs3f7LK8L47uL8k0PCz2ek9tWFXCnae~QyfnFp1-nY0zBQBpySNu2p03UOavxM3RqT9khTb39v3JV7xVYKGl0h1XEqpnBImB-VNDJqwNlKGRDBCjEu7aMzGAMaqkdv4927c60gL32dKly5OpAX~AnlFkEKonpp5YIbU8o-AVtvWfrg__',
         name: 'Hwang Geum-ju',
         nameKorean: '황금주',
         description: 'halmoni',
