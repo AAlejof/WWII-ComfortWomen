@@ -1,5 +1,6 @@
 import style from './News.module.css';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import NewsCard from './NewsCard/NewsCard';
 
 const News = () => {
@@ -16,7 +17,7 @@ const News = () => {
                         <NewsCard /><NewsCard /><NewsCard />
                     </div>
                 <button className={style.btnDiv}>
-                    VER MÁS
+                    <Link to="/blog">VER MÁS</Link>
                 </button>
                 </div>
             </div>

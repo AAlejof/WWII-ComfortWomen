@@ -22,18 +22,13 @@ const db = new Sequelize(
 
 // const db = new Sequelize(DB_DEPLOY, { logging: false, native: false });
 
-Admin(db);
 Publication(db);
 Contact(db)
 
 const {
-    admin,
-	publication,
+	publication
 } = db.models;
 
-
-admin.hasMany(publication);
-publication.belongsTo(admin);
 
 module.exports = {
 	...db.models,
