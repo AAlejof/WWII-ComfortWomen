@@ -434,10 +434,15 @@
 
     .koreanText {
         font-family: 'Noto sans korean';
-        /* font-size: 18px; */
         font-style: normal;
         font-weight: 900;
         line-height: 175%;
     }
 
+    .cardDiv {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
