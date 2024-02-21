@@ -1,7 +1,7 @@
 const halmonis = [
     {
         id: 1,
-        image: '/src//assets/img/survivors/gilWon-okImg.jpeg',
+        image: 'https://s3-alpha-sig.figma.com/img/1187/903e/accb99012df625b3ff8b07db9d40d412?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p4GR~kKdoOMM7iE472Zd6Ir2FAUMgkRr-tC~UAgyaQ975kgYzzepbWYoA6l~S4cmnSfXFoyI0XnYXSzhyE4-DTSN1PNQ5lsOc87DDvpnUh0e5sGo5Ahi40Ja3D4FHaZtEhdbfYkx5gl2pmpdrEH62xXKj6qibAxRFOip~J5NsYhxiZtwD6F59COH4paF6GYj2ORq-8ZC3EKfDAjIfPJ14Yo~YTK7dfUdo-5eg~MXLO-lVv4P7QBh4H-YXNcnzXE67ukduvmP6SaW4o7mdFL2mS-Z-ZBmpM-Oz3tKhmj6CZutbxbrKfj5wgNs3AB4zOFgYeeebsv0FZmEV1WOx4YzsA__',
         name: 'Gil Won-ok',
         nameKorean: '길원옥',
         description: 'halmoni',
@@ -13,7 +13,7 @@ const halmonis = [
     },
     {
         id: 2,
-        image: '/src/assets/img/survivors/leeYong-su_Img.jpeg',
+        image: 'https://s3-alpha-sig.figma.com/img/dc84/1c48/8359991e7941a7285937d90af29dc0c4?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=k3Tc7hW0ovXePA1OHVFrStWk8lgkBRcqRSpnGQ~CcAbAW1yvxt9lxHnoazUBVWHBoO8k0O~~kfl-R35wTrMZPgkYjHZ68trk5oDZrN20sI~sYO-4rxEnMDotVPbQF2Ola~1twEtvxoYX2DSkLtfnREh-mlm1-NbN1RmuOcLOhMq~CunaaE4DJUjbhNo6zWwA-Wr2rPuonHcRGSjG2o8XqsQd7nisKoJwm2QmXWDS-2WpGBEdiMKBxkB~KV5Mnhkyub7alMxzbXnM1umspo2Q-fZr0UWg4W9Glnki-gvwStJE5Fj8Y~sx3yG2bhjuOeufVGaExpsf9QlyrzTGoa2-nA__',
         name: 'Lee Yong-su',
         nameKorean: '이용수',
         description: 'halmoni',
@@ -25,7 +25,7 @@ const halmonis = [
     },
     {
         id: 3,
-        image: '/src/assets/img/survivors/KangDuk-kyungImg.jpeg',
+        image: 'https://s3-alpha-sig.figma.com/img/09e1/89e0/6b448d7f5f6bc0b182062c3dfeede555?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F3fXrdaFqvrUrfpByCbuKL3rJSGeIUOY7R0RQkNNXII3FJ~fkpBANJMgV2xI4E79W2G2kl9fBXKx7ifI-nARb58fvnHltlHyx~ywVhomxqIMFDaWNMLpp1d5pBzRHwl4AbsFmK-NS8pZdrRqtysL5DfBOkvLkns9WspfV1vgl2jgvWVJav2z5OfoQ-CP9k9s44nVksujmU6uP7uYLlEg6VE10HXnFcErs07W25ucdJnwY-NxwwjXMqMKpZNJ16iq7CL3wNrzmEibmylo~FxvE3DmHRNHYmCmUnjMFMYNHy-6vsP0ITbtqJVIaOYrusG1IMN8rt2crS8bJO1O0mBKJA__',
         name: 'Kang Duk-kyung',
         nameKorean: '강덕경',
         description: 'halmoni',
@@ -37,7 +37,7 @@ const halmonis = [
     },
     {
         id: 4,
-        image: '/src/assets/img/survivors/KimBok-dongImg.jpeg',
+        image: 'https://s3-alpha-sig.figma.com/img/540a/a942/be7b6855e1b136c886c3a9b9caf224b1?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=prSOL63tFHFuAvCfjEk3EG2O0HGz21o5vqUeyvO~chGeQep6N6lSBhrtpc5HlzB8R8WwlBwzqdPCkQbPxWdmbA0wj~P5NMRCWAwK9NdBCr0A3xAepNdKfDvfCl75dEqkfOKkpob64z1n0-8RqlkgLlLpfnoiANNAny8jlekQHcjpG5MfduTGMdriJz1FHfXu3wxHwg-DLedDglI1Heu-6KQu2m58SuTYVJkA8A9UKgphwMrN63PMJIrT1JZZ84cddCt4M20WOcjcrN5Z98PS-zx2at4oxP~zlvlJljTztAq5Eivbw7uUVSyN2NIHFCggmsROCpPNc41zcu0nRskmtg__',
         name: 'Kim Bok-dong',
         nameKorean: '길복동',
         description: 'halmoni',
@@ -49,7 +49,7 @@ const halmonis = [
     },
     {
         id: 5,
-        image: '/src/assets/img/survivors/KimHak-soonImg.jpeg',
+        image: 'https://s3-alpha-sig.figma.com/img/84c4/569b/e75e5991053aa211badf9ef061ec1220?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bkuhdY5tNVRgY9nxq~cv6iESzSiWQrDBUTBF1a0qcHVFpZ34zm7adLDMNSWu0~O-lDVcu22GBrEY7mwqOUOusghHqkVtoM7wcRY6ID4YF1Lpf2gN3bhJXoRC4sTSAaZQGZBFdG3yasuL2Bym6JUwiB0RZDCKALW3zLhpre8DYXu-KxIFbloLGSzEndn32ITP4hh3VE2l01TMKI8EJC~2kwikiPSqrVG1QsLxFQBLDCdC3AmUTY7X7wFyMB1Jfq2kB7ptCc~pYOpDxWRu5Rb7F9728OR2mKQtZYSLeAVeiJWvwUQw4P7GUhFsXgD-By5QwqX6g~GHouJfXJ5jdPS3lQ__',
         name: 'Kim Hak-soon',
         nameKorean: '김학순',
         description: 'halmoni',
@@ -61,7 +61,7 @@ const halmonis = [
     },
     {
         id: 6,
-        image: '/src/assets/img/survivors/MoonPil-giImg.jpeg',
+        image: 'https://s3-alpha-sig.figma.com/img/e3d5/761b/67b9b5bec5a920f08dd57b6dec16c9ff?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TMtzZjYXw73pSdQ68rhmP4ZvSAShiZzS00jDnmE5EiK-mPRJ7tiHMWzOjWQkgje3yiLc9ZyJ6LwNfQZr9XWV7ebONtb75tnQIe29Y8DH6gKzhDyw5FOXGUcGvSIo3kgaBDskPD-5aHkpxDEi8dT9m1Yn6~uqStbjKgBllCbVTs3xPdN3DLVXzeHOLjnj~vjQknSkG6fb-sL1xVMvWBwvaQRjh5lqMrRp-NxrLeDvdNlMGo4i3M-zzEQpF9ub5z9aZKzc7es3XSTZESON7irdJpp9irkXKqJbCFj1wM-VefliJTc-qeJde6NVgW0LaTgetevluRCBqKrSKH4BFZPHKg__',
         name: 'Moon Pil-gi',
         nameKorean: '문필기',
         description: 'halmoni',
@@ -73,7 +73,7 @@ const halmonis = [
     },
     {
         id: 7,
-        image: '/src/assets/img/survivors/SongShin-doImg.jpeg',
+        image: 'https://s3-alpha-sig.figma.com/img/d145/a003/7bb9e8f503c13caa026de7d949146850?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=a~jCtn7XKAWA4QjwGvXUSkb6nchVRfaUUtok0OkFweUa7jaen9XLkUfE-OT6wKOdbqqILxIi53mEHF8Q78TKvvaNwu4FEXKEU5ezpCAbRkd~UpCjKK2h8ZfHSPDjI8Cn7sACJf5QozvzSUbJmTI2H9~jzkRvI~iQGDnqpb~z2phZW1gRRZUIXsHVOMydVpcfo~SfA3mJ6SOkionLYRZBvSNMLE-8Sb41KKPzJEuCfe7lmY2I4dT8xs82DLNTiH-TqEKDzBc7~3onerMwq34Ne4OH5MLLMm5l-bqbJieaeLlV4LG0vRbvnKFE8YeRTBmlnzGIqFh0MfKT0bu4hktCZw__',
         name: 'Song Shin-do',
         nameKorean: '송신도',
         description: 'halmoni',
@@ -85,7 +85,7 @@ const halmonis = [
     },
     {
         id: 8,
-        image: '/src/assets/img/survivors/AhnJeom-soonImg.jpeg',
+        image: 'https://s3-alpha-sig.figma.com/img/61ed/7b8f/a4bd4dc9e7424fa9c3f541ba72995348?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GEIm8SUmG-bzKpBRIQhBbcJpgGHMMB3tZ1QHijQfBW99AkC2GiRBQa0WlyU3k-XO9Efs33o2iX8GYTX~ALxCNgqduDkrRZdqnTmqLL5~06kCobfFDiB3mjwh8W6CitbL7fzorJCsMMj~ZEw0vRTiai1dgyW2KxhVRkcUvTY1p4c4CbMdgOP91rRJtaWG~g3Gv9Ow-9teLQj1or30aP~s~MMc2XrmehM4GeCY35aFl9wxdosEYZIMtECSjm2ID~HBD0sJSbw4SSL3thusppdtArbe3LukZcOA3vZ8hNTiK5107sUXxHTvjDQCG96aqHA608K83S83kQpUfcyXGGCW6g__',
         name: 'Ahn Jeom-soon',
         nameKorean: '안점순',
         description: 'halmoni',
@@ -97,7 +97,7 @@ const halmonis = [
     },
     {
         id: 9,
-        image: '/src/assets/img/survivors/Chang Seo-unImg.jpeg',
+        image: 'https://s3-alpha-sig.figma.com/img/c951/5652/033ccc73b2ea575d25f78d5e960bdab5?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=b063~bsFGYOhLR8V~l33Vf4ydsTqAmEyCFIpB-SOxDr4t30GnS-Sw8gprNlMnzM4xJgJztzPi3oyj0jyMlpZDrQTmTZDpugkAKyaR~YWyV3WZryaXONXyCw~aJmqrZmUKtL~jC14M2tYKDkVO4CKJw7GGWX8wBrqKoi4suoTZWImAGmKmsUZ~mOxEW1gmFllDvzZP5VtoZivfMI7uz8vsziYm52lsbF1~ZI8Yp17vD8AxDat00zOVTSYjs4jKHiNLuNiNpH3aEOsRGGCuQVCKZhOxrQC3mSXoxxpsWsp5vGs1v1Wd4hKVVpKQOI8yf3wuzxiliiPoBzrYA4HAQ6S9g__',
         name: 'Chang Seo-un',
         nameKorean: '장세운',
         description: 'halmoni',
