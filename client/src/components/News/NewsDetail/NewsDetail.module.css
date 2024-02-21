@@ -1,3 +1,90 @@
+/*----------MOBILE-------------------*/
+@media (max-width: 450px) {
+
+    .titleImgDiv {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        height: fit-content;
+        margin-top: 40px;
+        background-color: #4D4D4D;
+    }
+
+    .titleDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .categorySpan {
+        font-family: Merriweather Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        text-align: left;
+        margin-left: 5vw;
+    }
+
+    .dateSpan{
+        font-family: Merriweather;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: left;
+        margin-left: 5vw;
+        margin-bottom: 2vw; 
+    }
+
+    .newsH2 {
+        font-family: 'Merriweather';
+        font-size: 25px;
+        text-align: left;
+        color: #FFF;
+        font-weight: 900;
+        margin-left: 5vw;
+        width: 355px;
+        border-top: solid 1px;
+        border-bottom: solid 1px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .newsTextDiv {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        background-color: #FFF;
+        min-height: 20vh;
+    }
+
+    .newsP {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        font-family: 'Merriweather';
+        font-size: 14px;
+        text-align: left;
+        color: #666666;
+        font-weight: 400;
+        padding-left: 5vw;
+        width: 75%;
+        line-height: 175%;
+
+    }
+
+    /* ---------CARROUSEL-------- */
+
+    .descImg {
+        /* z-index: 1; */
+        width: 100%;
+        max-height: fit-content;
+        max-width: 890px;
+    }
+
+}
+
 /* ---------DESKTOP & TABLET--------- */
 @media (min-width: 451px) {
 

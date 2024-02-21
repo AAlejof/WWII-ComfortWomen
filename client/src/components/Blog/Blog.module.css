@@ -1,3 +1,81 @@
+/* ---------MOBILE--------- */
+@media (max-width: 450px) {
+
+    .newsContainer {
+        background-color: #FFF;
+        
+    }
+
+    .descImgDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        background-color: #FFF;
+        padding-bottom: 50px #4D4D4D;
+    }
+
+    .descDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .descH2 {
+        font-family: 'Merriweather';
+        font-size: 35px;
+        text-align: left;
+        color: #1E1E1E;
+        font-weight: 700;
+        padding-top: 3vw;
+        padding-left: 5vw;
+        width: 355px;
+    }
+
+    .infoDiv {
+        background-color: #FFF;
+        width: 100vw;
+        height: max-content;
+        min-height: 70vh;
+        border-bottom: 50px solid;
+        border-image: linear-gradient(to right, #FFF 37%, #4D4D4D 37%) 1;
+    }
+
+    .titleDiv {
+        display: flex;
+        justify-content: space-between;
+        padding: 5%;
+    }
+
+    .contentDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5%;
+        text-align: left;
+    }
+
+    .btnDiv {
+        display: inline-flex;
+        padding: 15px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #000;
+        background: #FFF;
+        color: #000;
+        text-align: center;
+        font-family: Merriweather Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3.75px;
+        margin-bottom: 3%;
+    }
+
+}
+
 /* ---------DESKTOP & TABLET--------- */
 @media (min-width: 451px) {
 
