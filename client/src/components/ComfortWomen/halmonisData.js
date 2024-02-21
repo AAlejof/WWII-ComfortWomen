@@ -1,0 +1,123 @@
+const halmonis = [
+    {
+        id: 1,
+        image: '/src//assets/img/survivors/gilWon-okImg.jpeg',
+        name: 'Gil Won-ok',
+        nameKorean: '길원옥',
+        description: 'halmoni',
+        descriptionK: '할머니',
+        dates: '1928 - presente',
+        quote: '“Mis cicatrices nunca desaparecerán.”',
+        quoteKorean: '“죽을 때까지 상처는 아물지 않습니다.”',
+        testimony: 'Gil Won-ok was born in 1928 in Heechun, Pyeongahnbuk-do, and moved to Pyongyang for her father’s work as a secondhand shop dealer. In 1940, when she was 12 years old (13 years old in Korea), her father was imprisoned for buying products from a thief, and Gil Won-ok started looking for jobs to pay for her father’s fines. She went to Harbin, China to find work but was abducted and forced to serve as a Japanese military “comfort woman”. \n After being infected with a sexually transmitted disease, Gil Won-ok came back home. In 1942, when she was 15 years old, she was helping her family business that was getting worse, and went to Shijiazhuang, China, to find work with her friend. However, she ended up as a “comfort woman,” again. \n She could not return home after the liberation because the war had split Korea in half. She made a living through a compound shop or as a street vendor. \n When she was 31 years old, she adopted a son and continued working in the market. She registered as a victim of Japanese military sexual slavery in 1998. Since 2004, she lives in Peaceful Our Home (Urijip of Peace), a shelter for survivors. \n     After registering as a victim, she travels to inform people of the Japanese military sexual slavery and passionately engages in different activities such as the Wednesday Demonstration to resolve the Japanese military sexual slavery issue. On International Women’s Day on March 8th, 2012, she established the Butterfly Fund, to direct any reparation she would receive from the Japanese government to support victims of sexual violence in armed conflict. \n On May 17th, 2017, Gil Won-ok founded Gil Won-ok Women’s Peace Prize to support activists who work for women’s rights, peace, and reunification movement in Korea.'
+    },
+    {
+        id: 2,
+        image: '/src/assets/img/survivors/leeYong-su_Img.jpeg',
+        name: 'Lee Yong-su',
+        nameKorean: '이용수',
+        description: 'halmoni',
+        descriptionK: '할머니',
+        dates: '1928 - presente',
+        quote: '“La historia incorreta no desaparece aunque intentes ocultarla.”',
+        quoteKorean: '“잘못된 역사는 감춘다고 해서 사라지는 것이 아니에요.”',
+        testimony: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. \n Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. Duis a arcu convallis, gravida purus eget, mollis diam.'
+    },
+    {
+        id: 3,
+        image: '/src/assets/img/survivors/KangDuk-kyungImg.jpeg',
+        name: 'Kang Duk-kyung',
+        nameKorean: '강덕경',
+        description: 'halmoni',
+        descriptionK: '할머니',
+        dates: '1929 - 1997',
+        quote: '"Nosotras, las halmonis, no moriremos tan fácilmente. Viviremos vidas largas."',
+        quoteKorean: '“우리 할머니들 그리 쉽게 안 죽고, 오래 살거예요.”',
+        testimony: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. \n Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. Duis a arcu convallis, gravida purus eget, mollis diam.'
+    },
+    {
+        id: 4,
+        image: '/src/assets/img/survivors/KimBok-dongImg.jpeg',
+        name: 'Kim Bok-dong',
+        nameKorean: '길복동',
+        description: 'halmoni',
+        descriptionK: '할머니',
+        dates: '1926 - 2019',
+        quote: '“Preferimos morir que recibir ese dinero.”',
+        quoteKorean: '“우리는 죽으면 죽었지, 그런 돈은 받기 싫습니다.”',
+        testimony: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. \n Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. Duis a arcu convallis, gravida purus eget, mollis diam.'
+    },
+    {
+        id: 5,
+        image: '/src/assets/img/survivors/KimHak-soonImg.jpeg',
+        name: 'Kim Hak-soon',
+        nameKorean: '김학순',
+        description: 'halmoni',
+        descriptionK: '할머니',
+        dates: '1924 - 1997',
+        quote: '“Esta es la ‘verdad histórica’ que necesita ser revelada, así que decidí hablar.”',
+        quoteKorean: '“언젠가는 밝혀져야 할 ‘역사적 사실’.이기에 털어놓기로 했습니다.”',
+        testimony: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. \n Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. Duis a arcu convallis, gravida purus eget, mollis diam.'
+    },
+    {
+        id: 6,
+        image: '/src/assets/img/survivors/MoonPil-giImg.jpeg',
+        name: 'Moon Pil-gi',
+        nameKorean: '문필기',
+        description: 'halmoni',
+        descriptionK: '할머니',
+        dates: '1925 - 2008',
+        quote: '“Pueda que muera con esta cicatriz inolvidable clavada en mi corazón.”',
+        quoteKorean: '“평생 가슴에 못 박고 잊지 못할 상처를 안고 죽을지도 몰라.”',
+        testimony: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. \n Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. Duis a arcu convallis, gravida purus eget, mollis diam.'
+    },
+    {
+        id: 7,
+        image: '/src/assets/img/survivors/SongShin-doImg.jpeg',
+        name: 'Song Shin-do',
+        nameKorean: '송신도',
+        description: 'halmoni',
+        descriptionK: '할머니',
+        dates: '1922 - 2017',
+        quote: '“Mi corazón aún no está roto.”',
+        quoteKorean: '“나의 마음은 지지 않았습니다.”',
+        testimony: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. \n Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. Duis a arcu convallis, gravida purus eget, mollis diam.'
+    },
+    {
+        id: 8,
+        image: '/src/assets/img/survivors/AhnJeom-soonImg.jpeg',
+        name: 'Ahn Jeom-soon',
+        nameKorean: '안점순',
+        description: 'halmoni',
+        descriptionK: '할머니',
+        dates: '1928 - 2018',
+        quote: '“Llore tanto, pase todos esos años llorando.”',
+        quoteKorean: '“울기도 많이 울고, 노다지 눈물로 세월을 보냈지.”',
+        testimony: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. \n Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. Duis a arcu convallis, gravida purus eget, mollis diam.'
+    },
+    {
+        id: 9,
+        image: '/src/assets/img/survivors/Chang Seo-unImg.jpeg',
+        name: 'Chang Seo-un',
+        nameKorean: '장세운',
+        description: 'halmoni',
+        descriptionK: '할머니',
+        dates: '1924 - 2004',
+        quote: '“Se debe a dar a conocer nuestro problema a más personas.”',
+        quoteKorean: '단 한사람이라도 우리의 문제를 더 가르쳐야 합니다.',
+        testimony: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. \n Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. Duis a arcu convallis, gravida purus eget, mollis diam.'
+    },
+    {
+        id: 10,
+        image: '/src/assets/img/survivors/HwangGeum-juImg.jpeg',
+        name: 'Hwang Geum-ju',
+        nameKorean: '황금주',
+        description: 'halmoni',
+        descriptionK: '할머니',
+        dates: '1922 - 2013',
+        quote: '“Discúlpate sinceramente y devolveme mi juventud.”',
+        quoteKorean: '“진정으로 사죄하고 내 청춘을 돌려 놓아라 .”',
+        testimony: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. \n Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. Duis a arcu convallis, gravida purus eget, mollis diam.'
+    },
+]
+export default halmonis;

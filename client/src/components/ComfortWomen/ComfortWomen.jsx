@@ -4,12 +4,14 @@ import image1 from '../../assets/img/home/homeImg.png';
 import image2 from '../../assets/img/home/homeImg2.png';
 import image3 from '../../assets/img/home/homeImg3.png';
 import Card from './Card/Card';
+import halmonis from './halmonisData';
 import CardDetail from './Detail/CardDetail';
 
 const ComfortWomen = () => {
     const [selectedTitle, setSelectedTitle] = useState("¿Quiénes son?");
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [isCardDetailVisible, setCardDetailVisible] = useState(false);
+    const [selectedCardId, setSelectedCardId] = useState(null);
 
     const images = [image1, image2, image3];
 
@@ -106,8 +108,9 @@ const ComfortWomen = () => {
     };
 
 
-    const toggleCardDetail = () => {
+    const toggleCardDetail = (halmoniId) => {
         setCardDetailVisible(!isCardDetailVisible);
+        setSelectedCardId(halmoniId);
     };
 
     return (
@@ -146,19 +149,24 @@ const ComfortWomen = () => {
                     </div>
                     <div className={style.contentDiv}>
                         {selectedTitle === 'Testimonios' ? (
-                            <div>
-                                <Card onClick={toggleCardDetail} />
-                                {isCardDetailVisible && <CardDetail onClose={toggleCardDetail} />}
+                            <div className={style.cardDiv}>
+                                {halmonis.map((halmoni) => (
+                                    <Card key={halmoni.id} onClick={() => toggleCardDetail(halmoni.id)} halmoni={halmoni} />
+                                ))}
+                                {isCardDetailVisible && <CardDetail onClose={toggleCardDetail} halmoni={halmonis.find(h => h.id === selectedCardId)} />}
                             </div>
                         ) : (
-                            <div className={style.summaryDiv}>
-                                {textData.find((item) => item.title === selectedTitle)?.summary}
-                            </div>
+                            <>
+                                <div className={style.summaryDiv}>
+                                    {textData.find((item) => item.title === selectedTitle)?.summary}
+                                </div>
+                                <div className={style.textDiv}>
+                                    {textData.find(item => item.title === selectedTitle)?.text}
+                                </div>
+
+                            </>
                         )}
 
-                    <div className={style.textDiv}>
-                        {textData.find(item => item.title === selectedTitle)?.text}
-                    </div>
                     </div>
                 </div>
 

@@ -1,11 +1,3 @@
-// Admin
-const deleteAdmin = require("./admin/deleteAdmin");
-const getAllAdmins = require("./admin/getAllAdmins");
-const postAdmin = require("./admin/postAdmin");
-const putAdmin = require("./admin/putAdmin");
-const restoreAdmin = require("./admin/restoreAdmin");
-const getSoftDeletedAdmin = require("./admin/getSoftDeletedAdmin");
-
 // Contact
 const deleteContact = require("./contact/deleteContact");
 const getAllContact = require("./contact/getAllContact");
@@ -26,13 +18,6 @@ const getSoftDeletedPublication = require("./publications/getSoftDeletedPublicat
 const filters = require("./publications/filters");
 
 module.exports = {
-	// Admin
-	deleteAdmin,
-	getAllAdmins,
-	postAdmin,
-	putAdmin,
-	restoreAdmin,
-	getSoftDeletedAdmin,
 	// Contact
 	deleteContact,
 	getAllContact,
