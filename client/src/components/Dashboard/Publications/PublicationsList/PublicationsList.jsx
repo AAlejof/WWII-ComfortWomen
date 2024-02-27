@@ -1,40 +1,39 @@
 import React, { useEffect } from 'react';
-import { useDispatch , useSelector } from 'react-redux';
-import {
-	getAllContact,
-	deleteContact,
-} from '../../../../redux/actions/actions';
+import { useDispatch, useSelector } from 'react-redux';
+import { deleteBlog, getAllPosts } from '../../../../redux/actions/actions';
 import swal from 'sweetalert';
 import style from './PublicationsList.module.css'
 
 const PublicationsList = () => {
 
   const dispatch = useDispatch();
-  const contacts = useSelector((state) => state.contact); 
+  // const posts = useSelector((state) => state.post);
+  const initial_posts  = useSelector((state) => state.initial_posts);
 
-  useEffect(() => {
-    dispatch(getAllContact()); // Dispatch the action to fetch contacts when the component mounts
-  }, [dispatch]);
+	useEffect(() => {
+		dispatch(getAllPosts());
 
-  const handleDeleteContact = async (id) => {
-    
+	}, []);
+
+  const handleDeleteBlog = async (id) => {
+
     swal({
-			title: "Querés borrar esta publicación?",
-			text: "Si es así, click en Ok",
-			icon: "warning",
-			buttons: true,
-			dangerMode: true,
-		}).then((result) => {
-			if (result) {
-				dispatch(deleteContact(id)); // Dispatch the action to delete a contact
-				swal({
-					title: "Publicación borrada!",
-					icon: "success",
-				});
-			} else {
-				swal("Descartado", "", "info");
-			}
-		});
+      title: "Querés borrar esta publicación?",
+      text: "Si es así, click en Ok",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    }).then((result) => {
+      if (result) {
+        dispatch(deleteBlog(id)); // Dispatch the action to delete a contact
+        swal({
+          title: "Publicación borrada!",
+          icon: "success",
+        });
+      } else {
+        swal("Descartado", "", "info");
+      }
+    });
   };
 
   function formatCreatedAt(createdAt) {
@@ -44,10 +43,11 @@ const PublicationsList = () => {
     const year = date.getFullYear().toString().slice(2);
     const hours = date.getHours().toString().padStart(2, '0');
     const minutes = date.getMinutes().toString().padStart(2, '0');
-  
+
     return `${day}/${month}/${year} ${hours}:${minutes}`;
   }
-  
+
+
 
   return (
     <div className={style.publicationsDiv}>
@@ -65,23 +65,29 @@ const PublicationsList = () => {
           </tr>
         </thead>
         <tbody>
-          {contacts.map((contact) => (
-            <tr key={contact?.id}>
-              <td>{contact?.author_name}</td>
-              <td>{contact?.tag}</td>
-              <td>{contact?.content}</td>
-              <td>{contact?.mail}</td>
-              <td>{formatCreatedAt(contact.createdAt)}</td>
+          {initial_posts && initial_posts.length > 0 ? (
+          initial_posts?.map((post) => (
+            <tr key={post?.id}>
+              <td>{post?.title}</td>
+              <td>{post?.author_name}</td>
+              <td>ver</td>
+              <td>{post?.tag}</td>
+              <td>{formatCreatedAt(post?.createdAt)}</td>
               <td className={style.tableButton}>
                 <button>✎</button>
               </td>
               <td className={style.tableButton}>
-                <button onClick={() => handleDeleteContact(contact.id)}>
+                <button onClick={() => handleDeleteBlog(post?.id)}>
                   X
                 </button>
               </td>
             </tr>
-          ))}
+          ))
+          ) : (
+            <tr>
+              <td colSpan="7">No hay publicaciones disponibles</td>
+            </tr>
+          )}
         </tbody>
       </table>
     </div>
